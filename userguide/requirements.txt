@@ -1,0 +1,4 @@
+# Keep MkDocs on 1.x: MkDocs 2.0 drops the plugin and theme system that
+# Material for MkDocs relies on, so upgrading it breaks the site.
+mkdocs==1.6.1
+mkdocs-material==9.7.7

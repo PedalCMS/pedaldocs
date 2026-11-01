@@ -1,0 +1,25 @@
+/*
+ * Pedal CMS brand colors.
+ * Primary is the logo yellow with dark text on top of it. Yellow text on a
+ * white page fails contrast, so link and accent colors switch to a dark amber
+ * in the light scheme and use the yellow itself in the dark (slate) scheme.
+ */
+[data-md-color-primary="custom"] {
+  --md-primary-fg-color: #f2c80d;
+  --md-primary-fg-color--light: #f6d84a;
+  --md-primary-fg-color--dark: #c9a400;
+  --md-primary-bg-color: #1a1f23;
+  --md-primary-bg-color--light: #3a4046;
+}
+
+[data-md-color-scheme="default"][data-md-color-accent="custom"] {
+  --md-accent-fg-color: #8a6d00;
+  --md-accent-fg-color--transparent: rgba(138, 109, 0, 0.1);
+  --md-typeset-a-color: #8a6d00;
+}
+
+[data-md-color-scheme="slate"][data-md-color-accent="custom"] {
+  --md-accent-fg-color: #f2c80d;
+  --md-accent-fg-color--transparent: rgba(242, 200, 13, 0.1);
+  --md-typeset-a-color: #f2c80d;
+}

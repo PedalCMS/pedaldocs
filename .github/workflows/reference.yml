@@ -1,0 +1,183 @@
+name: Reference docs
+
+# Rebuilds the PHP API reference and the hooks reference from the latest Pedal
+# CMS release and opens a pull request with them in this repository:
+#
+#   phpdocs/                                      phpDocumentor output (replaced on every run)
+#   userguide/docs/developers/hooks-reference.md  hooks reference (generated from the plugin source)
+#   .reference-tag                                the release tag the pages were built from
+#
+# It runs daily and does nothing when the latest release is already built (or a
+# pull request for it is already open). To build a specific tag, for example an
+# older release or a prerelease, open Actions > Reference docs > Run workflow
+# and enter the tag. The build itself is tools/build-reference.sh.
+#
+# After the build, the workflow also zips the PHP API reference and attaches it
+# to the matching GitHub Release of the plugin as pedalcms-api-docs-<tag>.zip,
+# so every release keeps an offline copy for that exact version (the published
+# site only shows the latest release). This needs the optional secret below.
+#
+# One-time setup in this repository:
+#   - Settings > Actions > General > Workflow permissions: enable "Allow GitHub
+#     Actions to create and approve pull requests".
+#   - Optional variable PLUGIN_REPOSITORY (Settings > Secrets and variables >
+#     Actions): the plugin repository as owner/name. Defaults to PedalCMS/pedalcms.
+#   - Optional secret PLUGIN_REPO_TOKEN: only needed while the plugin repository
+#     is private. A fine-grained token with Contents set to read on that repository.
+#   - Optional secret PLUGIN_RELEASE_TOKEN: a fine-grained token with Contents set
+#     to read and write on the plugin repository, used only to upload the zip.
+#     Without it the zip step is skipped. The same token can also be stored as
+#     PLUGIN_REPO_TOKEN if the plugin repository is private.
+#
+# Pull requests opened with the built-in GITHUB_TOKEN do not trigger other
+# workflows, so checks that run on pull requests will not start for these.
+
+on:
+  schedule:
+    - cron: '17 3 * * *'
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: 'Plugin release tag, e.g. v0.7.0. Leave empty for the latest release.'
+        required: false
+        type: string
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: reference-docs
+  cancel-in-progress: false
+
+env:
+  PLUGIN_REPOSITORY: ${{ vars.PLUGIN_REPOSITORY || 'PedalCMS/pedalcms' }}
+
+jobs:
+  reference-pr:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout docs repository
+        uses: actions/checkout@v7.0.1
+
+      - name: Resolve release tag
+        id: resolve
+        shell: bash
+        env:
+          GH_TOKEN: ${{ secrets.PLUGIN_REPO_TOKEN || github.token }}
+          INPUT_TAG: ${{ inputs.tag }}
+        run: |
+          TAG="${INPUT_TAG}"
+          if [[ -z "${TAG}" ]]; then
+            # The latest release is the newest one that is neither a draft nor a prerelease.
+            TAG="$(gh release view --repo "${PLUGIN_REPOSITORY}" --json tagName --jq .tagName)"
+          fi
+
+          if [[ -z "${TAG}" ]]; then
+            echo "::error::Could not work out which plugin release to build."
+            exit 1
+          fi
+
+          echo "Plugin release: ${TAG}"
+          echo "TAG=${TAG}" >> "${GITHUB_ENV}"
+
+          SKIP=false
+          if [[ "${{ github.event_name }}" == "schedule" ]]; then
+            if [[ -f .reference-tag && "$(cat .reference-tag)" == "${TAG}" ]]; then
+              echo "${TAG} is already built; nothing to do."
+              SKIP=true
+            elif git ls-remote --exit-code --heads origin "phpdocs/${TAG}" >/dev/null 2>&1; then
+              echo "A pull request branch for ${TAG} already exists; nothing to do."
+              SKIP=true
+            fi
+          fi
+          echo "skip=${SKIP}" >> "${GITHUB_OUTPUT}"
+
+      - name: Checkout plugin release
+        if: steps.resolve.outputs.skip != 'true'
+        uses: actions/checkout@v7.0.1
+        with:
+          repository: ${{ env.PLUGIN_REPOSITORY }}
+          ref: ${{ env.TAG }}
+          path: .cache/plugin
+          token: ${{ secrets.PLUGIN_REPO_TOKEN || github.token }}
+
+      - name: Setup PHP
+        if: steps.resolve.outputs.skip != 'true'
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.2'
+          coverage: none
+
+      - name: Build reference
+        if: steps.resolve.outputs.skip != 'true'
+        shell: bash
+        run: bash tools/build-reference.sh .cache/plugin "${TAG}"
+
+      - name: Attach API reference zip to plugin release
+        if: steps.resolve.outputs.skip != 'true'
+        shell: bash
+        env:
+          GH_TOKEN: ${{ secrets.PLUGIN_RELEASE_TOKEN }}
+        run: |
+          # A manual run for the same tag uploads again and replaces the zip (--clobber).
+          # The upload never blocks the pull request: failures only log a warning.
+          if [[ -z "${GH_TOKEN}" ]]; then
+            echo "::warning::PLUGIN_RELEASE_TOKEN is not set; skipping the API reference zip."
+            exit 0
+          fi
+
+          if ! gh release view "${TAG}" --repo "${PLUGIN_REPOSITORY}" >/dev/null 2>&1; then
+            echo "::warning::There is no plugin release for ${TAG} in ${PLUGIN_REPOSITORY}; skipping the API reference zip."
+            exit 0
+          fi
+
+          ZIP="${RUNNER_TEMP}/pedalcms-api-docs-${TAG}.zip"
+          rm -f "${ZIP}"
+          (cd phpdocs && zip -rq "${ZIP}" .)
+
+          if gh release upload "${TAG}" "${ZIP}" --repo "${PLUGIN_REPOSITORY}" --clobber; then
+            echo "Attached pedalcms-api-docs-${TAG}.zip to the ${TAG} release."
+          else
+            echo "::warning::Could not upload the API reference zip to the ${TAG} release."
+          fi
+
+      - name: Open pull request
+        if: steps.resolve.outputs.skip != 'true'
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_URL: https://github.com/${{ env.PLUGIN_REPOSITORY }}/releases/tag/${{ env.TAG }}
+        run: |
+          if [[ -z "$(git status --porcelain)" ]]; then
+            echo "Docs already match ${TAG}; nothing to propose."
+            exit 0
+          fi
+
+          BASE="$(git rev-parse --abbrev-ref HEAD)"
+          BRANCH="phpdocs/${TAG}"
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git checkout -B "${BRANCH}"
+          git add -A
+          git commit -m "Update PHP API docs and hooks reference for Pedal CMS ${TAG}"
+          git push --force origin "${BRANCH}"
+
+          if [[ "$(gh pr view "${BRANCH}" --repo "${{ github.repository }}" --json state --jq .state 2>/dev/null)" == "OPEN" ]]; then
+            echo "Updated the existing pull request for ${BRANCH}."
+            exit 0
+          fi
+
+          gh pr create \
+            --repo "${{ github.repository }}" \
+            --base "${BASE}" \
+            --head "${BRANCH}" \
+            --title "PHP API docs for Pedal CMS ${TAG}" \
+            --body "Generated from the [Pedal CMS ${TAG} release](${RELEASE_URL}).
+
+          - \`phpdocs/\`: PHP API reference (phpDocumentor), replaced in full.
+          - \`userguide/docs/developers/hooks-reference.md\`: hooks reference.
+          - \`.reference-tag\`: the release tag these pages were built from.
+
+          Review the hooks reference diff for new or changed hooks that the user guide or developer handbook should mention."

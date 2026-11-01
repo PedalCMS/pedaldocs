@@ -1,0 +1,86 @@
+site_name: Pedal CMS Documentation
+site_description: Learn to build program, course and faculty directory sites with Pedal CMS.
+site_url: https://pedalcms.com/docs/
+repo_url: https://github.com/PedalCMS/pedalcms
+repo_name: PedalCMS/pedalcms
+docs_dir: docs
+site_dir: site
+
+theme:
+  name: material
+  features:
+    - navigation.sections
+    - navigation.indexes
+    - navigation.footer
+    - navigation.top
+    - content.code.copy
+    - search.suggest
+    - search.highlight
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - def_list
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+
+nav:
+  - Welcome: index.md
+  - Getting started:
+      - "Lesson 1: Installing Pedal CMS": getting-started/installing.md
+      - "Lesson 2: A tour of the settings": getting-started/settings-tour.md
+      - "Lesson 3: Look and feel": getting-started/look-and-feel.md
+  - Programs:
+      - "Lesson 4: Your first program": programs/first-program.md
+      - "Lesson 5: Program subpages": programs/subpages.md
+      - "Lesson 6: The program finder": programs/program-finder.md
+  - Courses:
+      - "Lesson 7: The course catalog": courses/course-catalog.md
+  - Directory:
+      - "Lesson 8: Faculty & staff directory": directory/faculty-staff.md
+  - Organizing content:
+      - "Lesson 9: Taxonomies": organizing/taxonomies.md
+      - "Lesson 10: FAQs": organizing/faqs.md
+  - Extras:
+      - "Lesson 11: Blocks": extras/blocks.md
+      - "Lesson 12: The terms grid shortcode": extras/terms-grid-shortcode.md
+  - Help:
+      - Troubleshooting: help/troubleshooting.md
+      - Glossary: help/glossary.md
+  - Developer handbook:
+      - developers/index.md
+      - Template overrides: developers/template-overrides.md
+      - Configuration: developers/configuration.md
+      - Working with hooks: developers/hooks.md
+      - Hooks reference: developers/hooks-reference.md
+      - PHP API reference: developers/api-reference.md
+  - Contributing:
+      - Writing the docs: contributing/writing-docs.md

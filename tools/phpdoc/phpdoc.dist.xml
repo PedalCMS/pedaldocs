@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<phpdocumentor
+        configVersion="3"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="https://www.phpdoc.org"
+        xsi:noNamespaceSchemaLocation="https://docs.phpdoc.org/latest/phpdoc.xsd"
+>
+    <title>PedalCMS Developer Docs</title>
+    <paths>
+        <output>.cache/api-docs</output>
+        <cache>.cache/phpdoc-cache</cache>
+    </paths>
+    <!-- tools/build-reference.sh overwrites this version number with the release being built. -->
+    <version number="0.6.7">
+        <api>
+            <source dsn=".">
+                <path>pedalcms.php</path>
+                <path>src</path>
+            </source>
+            <ignore>
+                <path>**/index.php</path>
+                <!-- Legacy field definitions; not loaded by the plugin. -->
+                <path>src/field-group-plugin.php</path>
+            </ignore>
+            <default-package-name>PedalCMS\Core</default-package-name>
+        </api>
+    </version>
+    <!-- <setting name="graphs.enabled" value="true"/> -->
+    <setting name="template.color" value="light-blue"/>
+</phpdocumentor>
