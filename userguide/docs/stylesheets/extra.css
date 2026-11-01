@@ -23,3 +23,14 @@
   --md-accent-fg-color--transparent: rgba(242, 200, 13, 0.1);
   --md-typeset-a-color: #f2c80d;
 }
+
+/*
+ * The logo is a wide wordmark, not a square icon, so give it more height
+ * than Material's 1.2rem default. Its dark fill matches the header text on
+ * the yellow header in both schemes.
+ */
+.md-header__button.md-logo img,
+.md-nav__button.md-logo img {
+  height: 1.6rem;
+  width: auto;
+}

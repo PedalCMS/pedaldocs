@@ -14,23 +14,23 @@ theme:
     - navigation.footer
     - navigation.top
     - content.code.copy
-    - search.suggest
-    - search.highlight
+  logo: assets/images/pedal-logo.svg
+  favicon: assets/images/favicon.png
+  # Follow the system light/dark preference. No `toggle` keys, so Material
+  # renders no switch button and picks the palette whose media query matches.
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
       primary: custom
       accent: custom
-      toggle:
-        icon: material/weather-night
-        name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: custom
       accent: custom
-      toggle:
-        icon: material/weather-sunny
-        name: Switch to light mode
+
+# No plugins: an explicit empty list stops Material from adding its default
+# search plugin, which removes the search box from the header.
+plugins: []
 
 extra_css:
   - stylesheets/extra.css
