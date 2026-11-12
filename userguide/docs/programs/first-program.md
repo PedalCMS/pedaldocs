@@ -8,13 +8,13 @@
 
     **Time:** about 20 minutes · **You'll need:** Pedal CMS activated; ideally one College and one Program Type already created (Lesson 9 explains them, but you can add one quickly under **Pedal > Colleges** and **Pedal > Program Types**)
 
-## Why this matters
+## Background
 
 Programs are the heart of Pedal CMS. Everything else in the plugin, from courses to people, exists to support a program page that helps a prospective student decide, "Is this for me, and how do I start?"
 
 A program has two kinds of information. Some of it belongs to the program alone, such as its overview text. Some of it is shared across the whole site, such as the address of your admissions form. Pedal CMS lets you set the shared values once on the settings page and override them on individual programs. Keeping that idea in mind makes this lesson much easier.
 
-## Step 1: Create the program
+## Step 1: Create a program
 
 We will create *Nursing (ADN)* at Riverbend.
 
@@ -22,7 +22,7 @@ We will create *Nursing (ADN)* at Riverbend.
 2. Type the program name in the title box: `Nursing (ADN)`.
 3. Optionally, set a **Featured image** in the box on the right. It appears in the page header and in the program search when images are turned on.
 
-Notice what is missing: there is no big text editor. Program content goes into the **Program Info** box below the title, which has a row of tabs: **Main**, **Curriculum**, **Careers**, **Faculty & Staff**, **Cost**, **Apply**, **FAQs** and **News**. This lesson covers **Main**. Lesson 5 covers the others.
+Notice what is missing: there is no big text editor. Program content goes into the **Program Info** box below the title, which has a row of tabs: **Main**, **Curriculum**, **Careers**, **Faculty & Staff**, **Cost**, **Apply**, **FAQs** and **News** (depending on which Subpages you have enabled). This guide covers the **Main** tab (which maps to the overview page and the program sidebar). [Program Subpages](programs/subpages.md) covers the others.
 
 ## Step 2: Fill in the Main tab
 
@@ -48,21 +48,24 @@ Work through the **Main** tab from top to bottom.
     **Prerequisites** is only a Yes or No switch. It does not hold a list of required courses. Write the actual requirements in **Overview Content** or on another subpage, and use the switch to flag that prerequisites exist.
 
 !!! note "Contact Us URL"
-    In version 0.6.7 the **Contact** button on a program takes its address from the site-wide **Contact URL** on the **Programs** tab. The per-program **Contact Us URL** field exists on the form, but the page does not currently use it. Set the site-wide address, and test the button after you set a per-program one.
+    The **Contact** button on a program takes its address from the site-wide **Contact URL** on the **Programs** tab. The per-program **Contact Us URL** field overrides that global setting for this specific program only.
 
-4. Click **Publish**.
+1. Click **Publish**.
+2. Visit the new page, which will be at an address like `https://riverbend.example/program/nursing-adn/`. 
 
-Visit the new page, which will be at an address like `https://riverbend.example/program/nursing-adn/`. You will see the title, the program type, a short line of details (instruction mode, prerequisites, college, department) and your overview.
+You will see the title, the program type, a short line of details (instruction mode, prerequisites, college, department) and your overview.
 
 ## Step 3: Set up the buttons
 
-Program pages have three buttons: **Apply Now** and **Request Info** (together in the sidebar), and **Contact** (below any related contacts). A button only appears when it has an address to go to. If you see no buttons, no address has been set yet.
+Program pages have three possible buttons: **Apply Now** and **Request Info** (at the top of the sidebar), and **Contact** (below any related contacts). A button only appears when it has an address to go to. If you see no buttons, no address has been configured. Go to WP Admin > Pedal > Settings > Programs and configure them.
 
 Addresses are set once for the whole site:
 
 1. Go to **Pedal > Settings** and open the **Programs** tab.
 2. Scroll to the **Configure Programs** group.
 3. Set the fields you need.
+
+Or at the program level on the **Main** tab:
 
 | Field | Purpose |
 |---|---|
@@ -101,10 +104,7 @@ https://www.riverbend.example/request-info/?program={$program_slug}
 
 For the same program, that becomes `https://www.riverbend.example/request-info/?program=nursing-adn`. Because the pattern is filled in per program, one setting serves every program on the site.
 
-!!! warning "Common mistake"
-    In version 0.6.7, the address fields clean up what you type when you save, and that cleaning removes curly braces. After you save, reopen the **Programs** tab and look at the field. If `{$program_guid}` now reads `$program_guid`, the placeholder will not be replaced on your pages. Until that is fixed, use a plain address on the settings page and set program-specific addresses in each program's own **Request Info URL** and **Apply Now URL** fields. Your developer can also set the pattern from code.
-
-If a program has its own **Request Info URL** or **Apply Now URL**, that address wins over the site-wide pattern.
+If a program has its own **Request Info URL** or **Apply Now URL**, that address overrides the site-wide pattern.
 
 ## Step 4: Application deadlines
 
@@ -119,30 +119,10 @@ Set the site-wide list first, since most programs share the same dates. Then ove
 The deadlines appear in the program sidebar under the heading **Application Deadlines**.
 
 !!! tip "Tip"
-    Put your normal dates on the **Programs** tab and leave program-level lists empty. When the dates change next year you will edit one list, not forty programs.
+    Put your normal dates on the **Programs** tab and leave program-level lists empty. When the dates change next year you will edit one list, not dozens of programs.
 
 ## Step 5: A default featured image
 
-Not every program has a photo ready. On the **Programs** tab, **Default Program Featured Image** lets you pick one image that stands in for any program with no featured image of its own. A program that has its own featured image keeps it.
-
-## Try it yourself
-
-Create *Welding Technology* in the *College of Trades & Technology* as a *Certificate*, taught *In-person*. Give it the **Program GUID** `WELD-CERT`. Its deadlines differ from the site-wide ones: it starts only in the fall, with the deadline *August 1st*. Its **Apply Now** button should use the pattern from this lesson.
-
-??? success "Check your work"
-    1. **Pedal > Add New**, title `Welding Technology`.
-    2. On the **Main** tab: **Program GUID** `WELD-CERT`; **College** *College of Trades & Technology*; **Program Type** *Certificate*; **Instruction Mode** *In-person*.
-    3. Under **Application Deadlines**, click **Add Deadline**; **Label** `Fall`, **Info** `August 1st`. Because the program has its own list, it overrides the site-wide one.
-    4. Leave **Apply Now URL** empty on the program, so it uses the site-wide pattern. With the pattern `https://apply.riverbend.example/start?program={$program_guid}` working, the button would go to `https://apply.riverbend.example/start?program=WELD-CERT`.
-    5. Click **Publish** and view the page to check the sidebar.
-
-## Recap
-
-- Add programs at **Pedal > Add New**. Content goes in the **Program Info** tabs, starting with **Main**.
-- **Prerequisites** is a Yes/No switch, not a text field.
-- Button addresses are set site-wide on **Pedal > Settings > Programs** and can use `{$program_guid}` and `{$program_slug}`; check that the braces survive saving.
-- A button without an address does not appear.
-- Application deadlines come from the program first, then its program type, then the site-wide list.
-- **Default Program Featured Image** fills in for programs without a picture.
+Not every program has a photo ready. On the **Programs** tab of the settings, **Default Program Featured Image** lets you pick one image that stands in for any program with no featured image of its own. A program that has its own featured image keeps it. 
 
 **Next up:** [Program subpages](subpages.md)
