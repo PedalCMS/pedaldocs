@@ -29,7 +29,7 @@ It is on by default. If your institution does not want a public catalog, switch 
 
 ## Step 2: Set up the catalog page
 
-The **Configure Course Catalog** group works like the program finder (Lesson 6).
+The **Configure Course Catalog** group works like the program search (Lesson 6).
 
 | Field | What it does |
 |---|---|

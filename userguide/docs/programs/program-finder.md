@@ -1,7 +1,7 @@
-# The program finder
+# The program search
 
 !!! abstract "In this guide"
-    - What the program finder is and where visitors find it
+    - What the program search is and where visitors find it
     - How to give it a title, description, image and header background
     - How to choose which search filters visitors see
     - How the keyword search, filters, result counts and paging behave
@@ -10,7 +10,7 @@
 
 ## Why this matters
 
-For most visitors the program finder is the front door. They arrive with a vague idea ("something in health care, maybe online") and they want to narrow the list quickly. A good finder page has an inviting heading, a few useful filters and a clean list.
+For most visitors the program search is the front door. They arrive with a vague idea ("something in health care, maybe online") and they want to narrow the list quickly. A good search page has an inviting heading, a few useful filters and a clean list.
 
 Pedal CMS builds that page automatically at `/programs/`. Your job is to dress it up and decide which filters earn a place.
 
@@ -79,11 +79,11 @@ To start over, the visitor clicks **Reset**, which appears once a filter is acti
 If a list is long, it is split across pages, and the result line then reads like **Showing 1-10 of 24 programs.** The number of programs per page comes from WordPress's own setting at **Settings > Reading**.
 
 !!! tip "Tip"
-    Test the finder as a visitor would. Open it in a private window, search for a word that appears in only one program title, and try each filter. Ten minutes of testing catches wording problems that you will not see in the dashboard.
+    Test the search as a visitor would. Open it in a private window, search for a word that appears in only one program title, and try each filter. Ten minutes of testing catches wording problems that you will not see in the dashboard.
 
 ## Try it yourself
 
-Riverbend wants the program finder titled **Find Your Program**, with only three filters: **Keyword**, **Program Type** and **Instruction Mode**. Programs should show their pictures.
+Riverbend wants the program search titled **Find Your Program**, with only three filters: **Keyword**, **Program Type** and **Instruction Mode**. Programs should show their pictures.
 
 ??? success "Check your work"
     1. **Pedal > Settings > Programs**, **Configure Program Listings** group: set **Page Title** to `Find Your Program`.
@@ -93,7 +93,7 @@ Riverbend wants the program finder titled **Find Your Program**, with only three
 
 ## Recap
 
-- The program finder is at `/programs/`, with filters, a result count and paging.
+- The program search is at `/programs/`, with filters, a result count and paging.
 - **Page Title**, **Page Description**, **Featured Image** and **Header Background Image** (Tuxedo only) dress up the header.
 - **Search Filters** chooses which of **Keyword**, **Program Type**, **Instruction Mode**, **College** and **Department** appear; disabled groupings never appear.
 - **Show Images in List View** is off by default.

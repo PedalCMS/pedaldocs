@@ -142,4 +142,4 @@ The **Subpages** tab has a **Career Post Type** setting. Careers are a separate 
 - Content for each subpage is edited on that program's tab in **Program Info**.
 - **Careers** needs a separate careers add-on to be useful.
 
-**Next lesson:** [The program finder](program-finder.md)
+**Next lesson:** [The program search](program-search.md)

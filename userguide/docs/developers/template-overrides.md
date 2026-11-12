@@ -10,7 +10,7 @@
 
 ## Why overrides exist
 
-Every page Pedal CMS draws, from the program finder to a faculty profile, is built from small PHP template files in the plugin's `templates/` folder. You could edit those files in place, but the next plugin update would erase your work. Overrides solve that: you copy a file into your theme, change the copy, and Pedal CMS prefers yours.
+Every page Pedal CMS draws, from the program search to a faculty profile, is built from small PHP template files in the plugin's `templates/` folder. You could edit those files in place, but the next plugin update would erase your work. Overrides solve that: you copy a file into your theme, change the copy, and Pedal CMS prefers yours.
 
 It is the same idea as a student turning in their own version of a worksheet. The plugin hands out its default, and if your theme has submitted a replacement with the same name, the replacement gets graded.
 

@@ -69,9 +69,9 @@ An **archive** is a page that lists everything that has a given term. Visitors r
 | **Program Type** | `https://riverbend.example/program-type/certificate/` |
 | **Personnel Category** | `https://riverbend.example/personnel-category/faculty/` |
 
-When **Enable Archive** is switched off, those pages do not exist. Instead, links to the term lead to the matching **filtered** list. The college link on a program page takes the visitor to the program finder, already filtered to that college. The help text says the same: "If disabled, links will point to a filtered programs view." For Personnel Category it is "a filtered directory view."
+When **Enable Archive** is switched off, those pages do not exist. Instead, links to the term lead to the matching **filtered** list. The college link on a program page takes the visitor to the program search, already filtered to that college. The help text says the same: "If disabled, links will point to a filtered programs view." For Personnel Category it is "a filtered directory view."
 
-Archives are the nicer experience, because each term gets its own page, heading and image. Turn **Enable Archive** off only if you would rather keep visitors inside the finder or the directory.
+Archives are the nicer experience, because each term gets its own page, heading and image. Turn **Enable Archive** off only if you would rather keep visitors inside the search or the directory.
 
 Department, Instruction Mode, Subject and Session have no tidy pages of their own. Their links go to filtered lists. Department shows an **Enable Archive** switch for consistency, but in version 0.6.7 its links lead to a filtered list either way.
 

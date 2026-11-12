@@ -61,7 +61,7 @@ nav:
   - Programs:
       - "Your first program": programs/first-program.md
       - "Program subpages": programs/subpages.md
-      - "The program finder": programs/program-finder.md
+      - "The program search": programs/program-search.md
   - Courses:
       - "The course catalog": courses/course-catalog.md
   - Directory:

@@ -20,7 +20,7 @@ We will create *Nursing (ADN)* at Riverbend.
 
 1. Go to **Pedal > Add New**.
 2. Type the program name in the title box: `Nursing (ADN)`.
-3. Optionally, set a **Featured image** in the box on the right. It appears in the page header and in the program finder when images are turned on.
+3. Optionally, set a **Featured image** in the box on the right. It appears in the page header and in the program search when images are turned on.
 
 Notice what is missing: there is no big text editor. Program content goes into the **Program Info** box below the title, which has a row of tabs: **Main**, **Curriculum**, **Careers**, **Faculty & Staff**, **Cost**, **Apply**, **FAQs** and **News**. This lesson covers **Main**. Lesson 5 covers the others.
 

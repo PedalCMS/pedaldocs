@@ -3,7 +3,7 @@
 A good course comes with a vocabulary list. Here are the terms used across the lessons, in alphabetical order, with the lesson where each one matters most.
 
 Archive
-:   A page that lists a group of items. `/programs/` is the archive of programs, and `/college/college-of-health-sciences/` is the archive of programs, courses and people in one college. See [Lesson 6](../programs/program-finder.md) and [Lesson 9](../organizing/taxonomies.md).
+:   A page that lists a group of items. `/programs/` is the archive of programs, and `/college/college-of-health-sciences/` is the archive of programs, courses and people in one college. See [Lesson 6](../programs/program-search.md) and [Lesson 9](../organizing/taxonomies.md).
 
 Block
 :   A building piece of the WordPress editor, such as a paragraph or an image. Pedal CMS adds three of its own. See [Lesson 11](../extras/blocks.md).
@@ -56,8 +56,8 @@ Presentation Mode
 Program
 :   A course of study that you market, such as *Nursing (ADN)*. It is the central content type of Pedal CMS. See [Lesson 4](../programs/first-program.md).
 
-Program Finder
-:   The searchable list of programs at `/programs/`. See [Lesson 6](../programs/program-finder.md).
+Program Search
+:   The searchable list of programs at `/programs/`. See [Lesson 6](../programs/program-search.md).
 
 Program GUID
 :   A unique code you give a program so it can be matched to other systems, such as an application system. It can be used in button address patterns. See [Lesson 4](../programs/first-program.md).

@@ -22,7 +22,7 @@ It is on by default. If you switch it off and save, the **Directory** menu disap
 
 ## Step 2: Set up the directory page
 
-The **Configure Directory** group sets up `/directory/`, the way the program finder is set up in Lesson 6.
+The **Configure Directory** group sets up `/directory/`, the way the program search is set up in Lesson 6.
 
 | Field | What it does |
 |---|---|

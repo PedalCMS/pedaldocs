@@ -1,6 +1,6 @@
 # Welcome to Pedal CMS
 
-Pedal CMS turns a WordPress site into a program marketing site for a college, university, school or training provider. It adds a searchable program finder, a course catalog and a faculty and staff directory, and it keeps them organized with groupings such as colleges, departments and program types.
+Pedal CMS turns a WordPress site into a program marketing site for a college, university, school or training provider. It adds a searchable program search, a course catalog and a faculty and staff directory, and it keeps them organized with groupings such as colleges, departments and program types.
 
 This guide is a course. We will build a small site together, one lesson at a time, and every lesson ends with an exercise so you can check that you understood the material before moving on. If you have ever wished that a plugin came with a patient teacher, you are in the right place.
 

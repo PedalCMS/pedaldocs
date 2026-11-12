@@ -31,7 +31,7 @@ Across the top of the page you will see six tabs. Here is what each one is for.
 | Tab | What it controls | Covered in |
 |---|---|---|
 | **General** | How the plugin looks: presentation mode, colors, header image size, breadcrumbs, the wrapper tag around page content | [Lesson 3](look-and-feel.md) |
-| **Programs** | The program finder page, the default program image, application deadlines, and the Request Info, Apply Now and Contact buttons | Lessons [4](../programs/first-program.md) and [6](../programs/program-finder.md) |
+| **Programs** | The program search page, the default program image, application deadlines, and the Request Info, Apply Now and Contact buttons | Lessons [4](../programs/first-program.md) and [6](../programs/program-search.md) |
 | **Subpages** | Which program subpages exist, and their titles and tab labels | [Lesson 5](../programs/subpages.md) |
 | **Course Catalog** | Turn the catalog on or off, set up its page, and rename credit and instructor labels | [Lesson 7](../courses/course-catalog.md) |
 | **Directory** | Turn the faculty and staff directory on or off, set up its page, and label courses taught | [Lesson 8](../directory/faculty-staff.md) |

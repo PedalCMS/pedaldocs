@@ -56,13 +56,13 @@ See [Lesson 3](../getting-started/look-and-feel.md).
 
 See [Lesson 2](../getting-started/settings-tour.md).
 
-## A search filter isn't showing on the finder, catalog or directory
+## A search filter isn't showing on the search, catalog or directory
 
 1. Check the grouping is enabled under **Pedal > Settings > Taxonomies**. Disabled groupings never appear as filters.
 2. Check the filter's switch is on in **Search Filters** on the matching tab (**Programs**, **Course Catalog** or **Directory**). If you disabled a grouping and re-enabled it, switch the filter on again.
-3. Remember that each page offers only certain filters. For example, the program finder has no **Subject** filter, and the directory has no **Instruction Mode** filter.
+3. Remember that each page offers only certain filters. For example, the program search has no **Subject** filter, and the directory has no **Instruction Mode** filter.
 
-See [Lesson 6](../programs/program-finder.md) and [Lesson 9](../organizing/taxonomies.md).
+See [Lesson 6](../programs/program-search.md) and [Lesson 9](../organizing/taxonomies.md).
 
 ## The Course Catalog or Directory menu has disappeared
 
