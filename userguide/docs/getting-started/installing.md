@@ -10,9 +10,9 @@
 
 ## Why this matters
 
-Every lesson that follows assumes a working installation, so let's get this right first. Installing a plugin is routine, but Pedal CMS does a few things at activation that are worth understanding: it creates new content types, gives your Administrator role the permission to manage them, and sets up the web addresses (URLs) where your programs, courses and people will live.
+Installing a plugin is routine, but Pedal CMS does a few things at activation that are worth understanding: it creates new content types, gives your Administrator role the permission to manage them, and sets up the web addresses (URLs) where your programs, courses, and people will live.
 
-If you know what appears after activation, you will recognize a healthy installation and spot a broken one.
+If you know what appears after activation, you will recognize a normal installation and spot a broken one.
 
 ## Step 1: Check your requirements
 
@@ -64,7 +64,7 @@ Activation adds new items to the left-hand dashboard menu. Take a moment to find
 | **Directory** | Your faculty and staff. Present while the directory is enabled. |
 | **FAQs** | Reusable questions and answers. Present while the FAQs subpage is enabled. |
 
-Under **Pedal** you will see **All Programs**, **Add New**, the groupings, and **Settings** at the bottom. The groupings are called taxonomies; Lesson 9 explains them.
+Under **Pedal** you will see **All Programs**, **Add New**, the groupings, and **Settings** at the bottom. The groupings are called taxonomies; they are explained in [Taxonomies](organizing/taxonomies.md).
 
 You can also reach the settings from the **Plugins** screen: Pedal CMS gets a **Settings** link next to the **Deactivate** link.
 
@@ -74,18 +74,18 @@ Pedal CMS builds its public pages at predictable addresses. Replace `riverbend.e
 
 | What | Address |
 |---|---|
-| The programs list (the program finder) | `https://riverbend.example/programs/` |
-| One program | `https://riverbend.example/program/nursing-adn/` |
+| The programs list (the program search) | `https://riverbend.example/programs/` |
+| Single program | `https://riverbend.example/program/nursing-adn/` |
 | The course catalog | `https://riverbend.example/courses/` |
-| One course | `https://riverbend.example/course/{course-slug}/` |
+| Single course | `https://riverbend.example/course/{course-slug}/` |
 | The directory | `https://riverbend.example/directory/` |
-| One person | `https://riverbend.example/directory/{person-slug}/` |
+| Single person | `https://riverbend.example/directory/{person-slug}/` |
 
 Notice that the list pages use the **plural** (`programs`, `courses`) and a single item uses the **singular** (`program`, `course`). The directory uses `directory` for both. The last part of a single address is the item's **slug**, which WordPress builds from the title (for example, "Nursing (ADN)" becomes `nursing-adn`).
 
 ## Step 6: If a page says "Page not found"
 
-WordPress keeps a list of the addresses it understands. Pedal CMS adds its addresses to that list when you activate it and whenever you save the Pedal settings. If you ever see a 404 error on a Pedal page, refresh the list yourself:
+WordPress keeps a list of the addresses it understands. Pedal CMS adds its addresses to that list when you activate it and whenever you save the Pedal settings. If you ever see a 404 error on a Pedal page, try refreshing the list yourself:
 
 1. Go to **Settings > Permalinks**.
 2. Click **Save Changes** without changing anything.
@@ -94,18 +94,18 @@ WordPress keeps a list of the addresses it understands. Pedal CMS adds its addre
     The **Plain** permalink option does not work well with Pedal CMS, because program subpages need addresses like `/program/nursing-adn/curriculum/`. Pick any other structure, such as **Post name**.
 
 !!! tip "Tip"
-    When something that was working yesterday returns a 404 today, saving **Settings > Permalinks** is the first thing I try. It costs ten seconds and fixes the problem more often than anything else.
+    When something that was working yesterday returns a 404 today, saving **Settings > Permalinks** is the first thing to try. It takes ten seconds and fixes the problem more often than anything else.
 
 ## Try it yourself
 
-1. Install and activate Pedal CMS on a test site (a local site or a staging copy is ideal).
+1. Install and activate Pedal CMS on a test site (a local site or a staging copy is ideal but you can also try [the Playground Demo](https://pedalcms.com/demo/)).
 2. Find the **Pedal** menu and open its submenu. Write down the names of the items you see.
-3. Visit `/programs/` on your site. What do you see, and why?
+3. Visit `/programs/` on your site. 
 
 ??? success "Check your work"
     1. After activation, **Pedal** appears in the dashboard menu, and a **Settings** link appears beside Pedal CMS on the Plugins screen.
     2. The **Pedal** submenu lists **All Programs**, **Add New**, the groupings (**Colleges**, **Departments**, **Program Types**, **Instruction Modes**) and **Settings**. You will also see **Course Catalog** and **Directory** in the main menu.
-    3. The program finder at `/programs/` loads but shows a message that no programs were found, because you have not added any yet. If you see a 404 instead, save **Settings > Permalinks** and reload.
+    3. The program search at `/programs/` loads but shows a message that no programs were found, because you have not added any yet. If you see a 404 instead, save **Settings > Permalinks** and reload.
 
 ## Recap
 
