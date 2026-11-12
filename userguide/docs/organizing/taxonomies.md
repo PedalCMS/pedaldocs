@@ -144,4 +144,4 @@ Riverbend wants "College" to read "School" everywhere, wants department choices 
 - **Singular Label** and **Plural Label** rename a grouping without changing web addresses.
 - **Use With** chooses whether College and Department apply to programs, courses and people.
 
-**Next lesson:** [FAQs](faqs.md)
+**Next up:** [FAQs](faqs.md)

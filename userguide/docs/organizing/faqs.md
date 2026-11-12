@@ -90,4 +90,4 @@ Write a global FAQ called *Is financial aid available?* in a category named *Fin
 - On a program, each **FAQ List** row is either a **Global FAQ** (pick an FAQ post) or a **Local FAQ** (type the question and answer).
 - **Group FAQs by Category** groups questions under headings, with leftovers under **Uncategorized**.
 
-**Next lesson:** [Blocks](../extras/blocks.md)
+**Next up:** [Blocks](../extras/blocks.md)

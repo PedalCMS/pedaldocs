@@ -118,4 +118,4 @@ Add *Dr. Maya Okafor* as described, give her the office `Health Sciences Buildin
 - People link to courses from either side, and to programs through **Related Faculty & Staff** and **Related Contacts**.
 - **Courses Taught Label** renames the courses heading on profiles.
 
-**Next lesson:** [Taxonomies](../organizing/taxonomies.md)
+**Next up:** [Taxonomies](../organizing/taxonomies.md)

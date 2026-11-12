@@ -115,4 +115,4 @@ WordPress keeps a list of the addresses it understands. Pedal CMS adds its addre
 - Public addresses are `/programs/`, `/program/{slug}/`, `/courses/`, `/course/{slug}/`, `/directory/` and `/directory/{slug}/`.
 - A 404 is usually fixed by saving **Settings > Permalinks**.
 
-**Next lesson:** [A tour of the settings](settings-tour.md)
+**Next up:** [A tour of the settings](settings-tour.md)

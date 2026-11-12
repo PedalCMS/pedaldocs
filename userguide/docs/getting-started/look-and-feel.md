@@ -102,4 +102,4 @@ Riverbend's brand color is a pale gold, `#f2c80d`, and the theme already shows b
 - Breadcrumbs come from NavXT, Yoast SEO, All in One SEO or Rank Math; switch **Display Breadcrumbs** off if two trails appear.
 - **Main Content Wrapper Tag** is **div**, **main** or **section**; use **main** only if your theme has no main element.
 
-**Next lesson:** [Your first program](../programs/first-program.md)
+**Next up:** [Your first program](../programs/first-program.md)

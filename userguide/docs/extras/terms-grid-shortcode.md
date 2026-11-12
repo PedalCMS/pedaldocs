@@ -133,4 +133,4 @@ Create a "Choose your path" section on Riverbend's home page that shows the thre
 - Only terms with content appear.
 - Put some text before the shortcode so its styles load.
 
-**Next lesson:** [Troubleshooting](../help/troubleshooting.md). That page is not a lesson, but it is where to go when something misbehaves, and the [Glossary](../help/glossary.md) explains every term in this course.
+**Next up:** [Troubleshooting](../help/troubleshooting.md). That page is not a lesson, but it is where to go when something misbehaves, and the [Glossary](../help/glossary.md) explains every term in this course.

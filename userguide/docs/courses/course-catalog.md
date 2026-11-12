@@ -114,4 +114,4 @@ Add the course *Fundamentals of Nursing* (code `NUR101`, 4 credits, subject *Nur
 - Course and person links work in both directions.
 - **Subject** and **Session** are the two course-only groupings.
 
-**Next lesson:** [Faculty & staff directory](../directory/faculty-staff.md)
+**Next up:** [Faculty & staff directory](../directory/faculty-staff.md)

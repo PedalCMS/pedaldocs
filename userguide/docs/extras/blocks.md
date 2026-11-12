@@ -76,4 +76,4 @@ Answer these three questions.
 - **PedalCMS Template** is used by block themes, is not in the inserter, and holds your Pedal CMS pages in place.
 - Never delete **PedalCMS Template** from a Pedal CMS template.
 
-**Next lesson:** [The terms grid shortcode](terms-grid-shortcode.md)
+**Next up:** [The terms grid shortcode](terms-grid-shortcode.md)

@@ -79,4 +79,4 @@ Riverbend's web team asks you three questions. For each one, name the tab you wo
 - One **Save Changes** button saves every tab.
 - If the page is missing, your developer may have hidden it.
 
-**Next lesson:** [Look and feel](look-and-feel.md)
+**Next up:** [Look and feel](look-and-feel.md)

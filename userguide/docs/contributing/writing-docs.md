@@ -92,7 +92,7 @@ Every lesson ends with an exercise, a recap and a link to the next lesson.
 ## Recap
 - ...
 
-**Next lesson:** [Program subpages](subpages.md)
+**Next up:** [Program subpages](subpages.md)
 ```
 
 Available extensions include admonitions, collapsible blocks (`???`), content tabs (`=== "Classic theme"`), tables, definition lists and keyboard keys. They are listed under `markdown_extensions` in `mkdocs.yml`.

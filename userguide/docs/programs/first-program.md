@@ -145,4 +145,4 @@ Create *Welding Technology* in the *College of Trades & Technology* as a *Certif
 - Application deadlines come from the program first, then its program type, then the site-wide list.
 - **Default Program Featured Image** fills in for programs without a picture.
 
-**Next lesson:** [Program subpages](subpages.md)
+**Next up:** [Program subpages](subpages.md)

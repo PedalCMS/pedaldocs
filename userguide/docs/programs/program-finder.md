@@ -99,4 +99,4 @@ Riverbend wants the program search titled **Find Your Program**, with only three
 - **Show Images in List View** is off by default.
 - Visitors use **Search** and **Reset**; the result line says **Filtered Results** when a filter is active.
 
-**Next lesson:** [The course catalog](../courses/course-catalog.md)
+**Next up:** [The course catalog](../courses/course-catalog.md)
