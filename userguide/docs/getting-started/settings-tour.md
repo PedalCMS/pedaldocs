@@ -47,9 +47,8 @@ That gives you a simple rule: leave a field empty to keep the default wording, a
 
 ## Step 4: Save
 
-1. Look in the top right corner of the page.
-2. Click **Save Changes**.
-3. Look for the **Settings saved.** message at the top.
+1. In the top right corner of the page, click the **Save Changes** button.
+2. Look for the **Settings saved.** message at the top.
 
 All six tabs are saved together. You can edit multiple tabs and click **Save Changes** once. But if you switch to another screen without saving, your edits will be lost.
 
