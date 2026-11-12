@@ -1,6 +1,6 @@
 # Developer handbook
 
-!!! abstract "What you'll learn"
+!!! abstract "In this guide"
     - How Pedal CMS starts up and which classes do what.
     - Which post types and taxonomies it registers, and their rewrite slugs.
     - How to read settings and labels from PHP.
@@ -44,7 +44,7 @@ All classes live in the `PedalCMS\Core` namespace. The autoloader in `src/_autol
 
 `Plugin::register_content_model()` is the method that decides what exists on a given site. Programs are always registered. Courses and people are registered only when the `course_enable` and `person_enable` settings allow it, and the FAQ post type is registered when the `faqs` slug appears in `SubpageManager::get_enabled_subpages()`, a list you can change with the `pedalcms/enabled_subpages` filter. Each optional taxonomy checks its own `*_enable` setting the same way. Because the checks run on every request, turning something off in the settings really does remove it.
 
-!!! tip "Teacher's tip"
+!!! tip "Tip"
     Ask `Plugin::post_types()` and `Plugin::taxonomies()` what is active instead of assuming. Both return only the enabled keys by default. Pass `false` to get every key the plugin knows about.
 
 ## Settings and fields come from CassetteCMF

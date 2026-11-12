@@ -1,6 +1,6 @@
-# Lesson 9: Taxonomies
+# Taxonomies
 
-!!! abstract "What you'll learn"
+!!! abstract "In this guide"
     - What a taxonomy is, in plain language
     - What each of Pedal CMS's groupings is for
     - What **Enable**, **Enable Archive**, **Singular Label**, **Plural Label** and **Use With** do
@@ -88,7 +88,7 @@ So choose the college first, then the department.
 
 The **Enable** switch for Department also controls the other two. Switching Department off hides its **Enable Archive** and **Depends on College** options.
 
-!!! tip "Teacher's tip"
+!!! tip "Tip"
     If your institution does not have colleges, switch **College** off. If your colleges and departments are independent, switch **Depends on College** off. Do not leave a grouping on out of habit; every filter you show is one more thing for visitors to figure out.
 
 ## Step 5: Use With

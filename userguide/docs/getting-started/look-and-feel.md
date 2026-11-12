@@ -1,6 +1,6 @@
-# Lesson 3: Look and feel
+# Look and feel
 
-!!! abstract "What you'll learn"
+!!! abstract "In this guide"
     - How the three presentation modes differ, and which one to choose
     - How to set your brand color and button text color
     - How to control the size of header images
@@ -31,7 +31,7 @@ Tuxedo adds the most styling and Ghost adds none. Stealth sits in the middle.
 
 The description under the field says that "additional options will be available when Tuxedo Mode is active." Here is what that means in practice: the **Header Background Image** fields on the **Programs**, **Course Catalog** and **Directory** tabs only appear while Tuxedo is selected, because only Tuxedo draws a background image behind page headers.
 
-!!! tip "Teacher's tip"
+!!! tip "Tip"
     Start with **Tuxedo**. If it fights with your theme, try **Stealth**. Choose **Ghost** only when your developer is writing their own styles, because pages will look plain until someone styles them.
 
 ## Step 2: Set your colors

@@ -1,6 +1,6 @@
-# Lesson 8: Faculty & staff directory
+# Faculty & staff directory
 
-!!! abstract "What you'll learn"
+!!! abstract "In this guide"
     - How to turn the directory on or off and set up its page
     - How to add a person, and what every field in **Person Info** does
     - How to group people by personnel category
@@ -32,7 +32,7 @@ The **Configure Directory** group sets up `/directory/`, the way the program fin
 | **Archive Header Background Image** | A background behind the header. Only shown in **Tuxedo** presentation mode. |
 | **Archive Search Filters** | Choose from **Keyword**, **Personnel Category**, **College** and **Department**. All four are on by default; groupings you have turned off are left out. |
 
-!!! tip "Teacher's tip"
+!!! tip "Tip"
     The default title **Personnel** sounds like a human resources memo. Most colleges prefer something like `Faculty & Staff`. Type it into **Archive Page Title**.
 
 The **Configure Personnel** group has two settings for individual profiles:

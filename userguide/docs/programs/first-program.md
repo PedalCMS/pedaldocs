@@ -1,6 +1,6 @@
-# Lesson 4: Your first program
+# Your first program
 
-!!! abstract "What you'll learn"
+!!! abstract "In this guide"
     - How to add a program and what every field on the **Main** tab does
     - How the Request Info, Apply Now and Contact buttons get their addresses
     - How application deadlines work, from site-wide to per-program
@@ -118,7 +118,7 @@ Set the site-wide list first, since most programs share the same dates. Then ove
 
 The deadlines appear in the program sidebar under the heading **Application Deadlines**.
 
-!!! tip "Teacher's tip"
+!!! tip "Tip"
     Put your normal dates on the **Programs** tab and leave program-level lists empty. When the dates change next year you will edit one list, not forty programs.
 
 ## Step 5: A default featured image

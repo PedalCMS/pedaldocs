@@ -1,6 +1,6 @@
-# Lesson 2: A tour of the settings
+# A tour of the settings
 
-!!! abstract "What you'll learn"
+!!! abstract "In this guide"
     - Where the Pedal CMS settings live
     - What each of the six tabs is for
     - How saving works, and what to expect after you save
@@ -45,7 +45,7 @@ Many text fields show gray placeholder text, such as **Request Info** in the **R
 
 That gives you a simple rule: leave a field empty to keep the default wording, and type something to replace it.
 
-!!! tip "Teacher's tip"
+!!! tip "Tip"
     Change one thing at a time while you are learning. Save, look at the front end, then change the next thing. If something looks wrong you will know exactly which change caused it.
 
 ## Step 4: Save

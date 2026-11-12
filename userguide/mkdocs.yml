@@ -55,23 +55,23 @@ markdown_extensions:
 nav:
   - Welcome: index.md
   - Getting started:
-      - "Lesson 1: Installing Pedal CMS": getting-started/installing.md
-      - "Lesson 2: A tour of the settings": getting-started/settings-tour.md
-      - "Lesson 3: Look and feel": getting-started/look-and-feel.md
+      - "Installing Pedal CMS": getting-started/installing.md
+      - "A tour of the settings": getting-started/settings-tour.md
+      - "Look and feel": getting-started/look-and-feel.md
   - Programs:
-      - "Lesson 4: Your first program": programs/first-program.md
-      - "Lesson 5: Program subpages": programs/subpages.md
-      - "Lesson 6: The program finder": programs/program-finder.md
+      - "Your first program": programs/first-program.md
+      - "Program subpages": programs/subpages.md
+      - "The program finder": programs/program-finder.md
   - Courses:
-      - "Lesson 7: The course catalog": courses/course-catalog.md
+      - "The course catalog": courses/course-catalog.md
   - Directory:
-      - "Lesson 8: Faculty & staff directory": directory/faculty-staff.md
+      - "Faculty & staff directory": directory/faculty-staff.md
   - Organizing content:
-      - "Lesson 9: Taxonomies": organizing/taxonomies.md
-      - "Lesson 10: FAQs": organizing/faqs.md
+      - "Taxonomies": organizing/taxonomies.md
+      - "FAQs": organizing/faqs.md
   - Extras:
-      - "Lesson 11: Blocks": extras/blocks.md
-      - "Lesson 12: The terms grid shortcode": extras/terms-grid-shortcode.md
+      - "Blocks": extras/blocks.md
+      - "The terms grid shortcode": extras/terms-grid-shortcode.md
   - Help:
       - Troubleshooting: help/troubleshooting.md
       - Glossary: help/glossary.md

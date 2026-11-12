@@ -1,6 +1,6 @@
 # Configuration
 
-!!! abstract "What you'll learn"
+!!! abstract "In this guide"
     - How to hide the settings screen on a locked-down site.
     - How to override a setting or a label from code.
     - How to add fields to the settings page and to post types.
@@ -75,7 +75,7 @@ add_filter(
 
 Notice that the option name has no `pedalcms_` prefix in either hook. Setting names come from the `name` keys in `src/fields-settings.php`.
 
-!!! tip "Teacher's tip"
+!!! tip "Tip"
     The filters change what the plugin reads, not what is saved. The settings screen will still show the stored value, which can confuse an administrator. Mention the override in a code comment, and in your site's handover notes.
 
 ## Changing a label

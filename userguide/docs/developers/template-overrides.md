@@ -1,6 +1,6 @@
 # Template overrides
 
-!!! abstract "What you'll learn"
+!!! abstract "In this guide"
     - How Pedal CMS chooses a template in classic themes and in block themes.
     - Which templates you can override, and where the copy goes.
     - How to override one part of a page from a child theme.
@@ -132,7 +132,7 @@ $pedalcms_args['context'] = $template;
 
 Reload a program page such as *Nursing (ADN)* and the line appears. Delete your copy and the plugin's version returns.
 
-!!! tip "Teacher's tip"
+!!! tip "Tip"
     Two variables are always in scope inside a template: `$args` (the data passed in) and `$template` (the name used to load it, such as `single-program/page-header`). `pedalcms_parse_template_args()` merges `$args` over your defaults, and gives the `pedalcms/template_defaults` filter a chance to change those defaults first.
 
 ## Changing a template without copying it

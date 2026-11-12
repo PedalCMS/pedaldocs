@@ -1,6 +1,6 @@
-# Lesson 11: Blocks
+# Blocks
 
-!!! abstract "What you'll learn"
+!!! abstract "In this guide"
     - What the three blocks that come with Pedal CMS do
     - When the **Job Title** and **Contact Info** blocks are available
     - What the **PedalCMS Template** block is for, and why you should leave it alone
@@ -38,7 +38,7 @@ Only when personnel are edited with the block editor, and that is not the defaul
 
 Both blocks read and write information about the person being edited. They are meant for the **Personnel** editor, not for pages or posts.
 
-!!! tip "Teacher's tip"
+!!! tip "Tip"
     Whichever editor you use, the stored information is the same. You can change the editor later without losing anyone's job title or phone number.
 
 ## The PedalCMS Template block

@@ -1,6 +1,6 @@
 # PHP API reference
 
-!!! abstract "What you'll learn"
+!!! abstract "In this guide"
     - What the generated API reference covers and where to find it.
     - How to build it on your own machine.
     - The docblock conventions that keep it useful.

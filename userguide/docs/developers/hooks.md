@@ -1,6 +1,6 @@
 # Working with hooks
 
-!!! abstract "What you'll learn"
+!!! abstract "In this guide"
     - How actions and filters work, in one paragraph.
     - How Pedal CMS names its hooks.
     - Five recipes you can adapt for your own site.
@@ -106,7 +106,7 @@ add_filter(
 );
 ```
 
-!!! tip "Teacher's tip"
+!!! tip "Tip"
     When a recipe does not behave, check three things in order: is the callback registered before the hook fires, did you ask for enough arguments in the fourth parameter of `add_filter()`, and does the callback return a value if it is a filter. Those three explain most hook problems.
 
 ## Reading the hooks reference

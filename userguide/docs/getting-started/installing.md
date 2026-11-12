@@ -1,6 +1,6 @@
-# Lesson 1: Installing Pedal CMS
+# Installing Pedal CMS
 
-!!! abstract "What you'll learn"
+!!! abstract "In this guide"
     - What your site needs before you install Pedal CMS
     - How to install and activate the plugin
     - What appears in the dashboard and on the front end after activation
@@ -49,7 +49,7 @@ Choose the method that matches how you manage your site.
 2. Find **Pedal CMS** and click **Activate**.
 
 !!! warning "Common mistake"
-    Students often install the plugin and forget to activate it, then wonder why the menu is missing. Installing puts the files on your site; activating switches the plugin on. You need both.
+    Users often install the plugin and forget to activate it, then wonder why the menu is missing. Installing puts the files on your site; activating switches the plugin on. You need both.
 
 There is no setup wizard. Activation takes you straight back to the Plugins screen, and you configure everything yourself from the settings page, which we visit in the next lesson.
 
@@ -93,7 +93,7 @@ WordPress keeps a list of the addresses it understands. Pedal CMS adds its addre
 !!! warning "Common mistake"
     The **Plain** permalink option does not work well with Pedal CMS, because program subpages need addresses like `/program/nursing-adn/curriculum/`. Pick any other structure, such as **Post name**.
 
-!!! tip "Teacher's tip"
+!!! tip "Tip"
     When something that was working yesterday returns a 404 today, saving **Settings > Permalinks** is the first thing I try. It costs ten seconds and fixes the problem more often than anything else.
 
 ## Try it yourself

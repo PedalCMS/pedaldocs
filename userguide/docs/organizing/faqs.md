@@ -1,6 +1,6 @@
-# Lesson 10: FAQs
+# FAQs
 
-!!! abstract "What you'll learn"
+!!! abstract "In this guide"
     - What FAQs and FAQ categories are in Pedal CMS
     - How to write a global FAQ once and reuse it on many programs
     - How to add a program-specific FAQ
@@ -69,7 +69,7 @@ The program's **FAQs** page (for example `/program/nursing-adn/faqs/`) shows eac
 
 With **Group FAQs by Category** on, questions appear under a heading for each category. Questions with no category are collected under **Uncategorized**. With it off, the questions appear in one list in the order you added them.
 
-!!! tip "Teacher's tip"
+!!! tip "Tip"
     Give every FAQ a category if you group them. A single **Uncategorized** heading in the middle of a tidy list looks accidental.
 
 ## Try it yourself

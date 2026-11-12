@@ -1,6 +1,6 @@
-# Lesson 5: Program subpages
+# Program subpages
 
-!!! abstract "What you'll learn"
+!!! abstract "In this guide"
     - What subpages are and how visitors move between them
     - How to turn subpages on or off for the whole site and for a single program
     - How to rename a subpage's title and tab label
@@ -120,7 +120,7 @@ The **Subpages** tab has a **Career Post Type** setting. Careers are a separate 
 - **Featured News Posts**: posts to keep at the top of the list.
 - **News Lead**: an introduction.
 
-!!! tip "Teacher's tip"
+!!! tip "Tip"
     For news, create one tag per program, such as `nursing-news`, and tag your announcements with it. After that the News tab maintains itself. Nobody has to edit the program each time a story is published.
 
 ## Try it yourself

@@ -1,6 +1,6 @@
-# Lesson 12: The terms grid shortcode
+# The terms grid shortcode
 
-!!! abstract "What you'll learn"
+!!! abstract "In this guide"
     - What a shortcode is, and what `[pedalcms_terms_grid]` shows
     - Every option the shortcode accepts, with its default
     - How to build three practical grids: colleges, program types and personnel categories
@@ -89,7 +89,7 @@ The link at the bottom of each card is built from three of these: `posts_link_pr
 
 Riverbend shows its two colleges side by side. Colleges are shared by programs, courses and people, so the number in the link would count all three. We turn the number off with `show_num_posts="0"`, and the link reads **Explore programs**, followed by a hidden "in College of Health Sciences" for screen readers.
 
-!!! tip "Teacher's tip"
+!!! tip "Tip"
     Use the number only for groupings that apply to one kind of content, such as Program Type. For College and Department, the count mixes programs, courses and people.
 
 ### Example 2: Program types with smaller headings

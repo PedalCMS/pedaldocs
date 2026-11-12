@@ -1,6 +1,6 @@
-# Lesson 7: The course catalog
+# The course catalog
 
-!!! abstract "What you'll learn"
+!!! abstract "In this guide"
     - How to turn the course catalog on or off
     - How to set up the catalog page and its search filters
     - How to relabel credits, the register button and instructors
@@ -77,7 +77,7 @@ The **Registration Search URL** can include the placeholder `{$course_reg_key}`.
 5. In the boxes on the right, choose the **Subjects** and **Sessions** that apply (see Step 6).
 6. Click **Publish**.
 
-!!! tip "Teacher's tip"
+!!! tip "Tip"
     Fill in **Short Description** for every course. In the catalog list it is what visitors read to decide whether to click.
 
 ## Step 5: Link instructors

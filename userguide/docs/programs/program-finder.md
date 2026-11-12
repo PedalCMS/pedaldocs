@@ -1,6 +1,6 @@
-# Lesson 6: The program finder
+# The program finder
 
-!!! abstract "What you'll learn"
+!!! abstract "In this guide"
     - What the program finder is and where visitors find it
     - How to give it a title, description, image and header background
     - How to choose which search filters visitors see
@@ -78,7 +78,7 @@ To start over, the visitor clicks **Reset**, which appears once a filter is acti
 
 If a list is long, it is split across pages, and the result line then reads like **Showing 1-10 of 24 programs.** The number of programs per page comes from WordPress's own setting at **Settings > Reading**.
 
-!!! tip "Teacher's tip"
+!!! tip "Tip"
     Test the finder as a visitor would. Open it in a private window, search for a word that appears in only one program title, and try each filter. Ten minutes of testing catches wording problems that you will not see in the dashboard.
 
 ## Try it yourself
