@@ -107,12 +107,4 @@ WordPress keeps a list of the addresses it understands. Pedal CMS adds its addre
     2. The **Pedal** submenu lists **All Programs**, **Add New**, the groupings (**Colleges**, **Departments**, **Program Types**, **Instruction Modes**) and **Settings**. You will also see **Course Catalog** and **Directory** in the main menu.
     3. The program search at `/programs/` loads but shows a message that no programs were found, because you have not added any yet. If you see a 404 instead, save **Settings > Permalinks** and reload.
 
-## Recap
-
-- Pedal CMS needs WordPress 6.9+ and PHP 8.2+, and no other plugins.
-- Install from an uploaded zip, the plugin directory or FTP, then **activate**.
-- The **Pedal** menu holds programs and **Settings**; **Course Catalog** and **Directory** have their own menus.
-- Public addresses are `/programs/`, `/program/{slug}/`, `/courses/`, `/course/{slug}/`, `/directory/` and `/directory/{slug}/`.
-- A 404 is usually fixed by saving **Settings > Permalinks**.
-
 **Next up:** [A tour of the settings](settings-tour.md)
