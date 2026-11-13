@@ -14,7 +14,7 @@ Subpages are central to Pedal's methodology. They turn every program into a micr
 
 Every program automatically gets a row of tabs (Subpages), and each tab is its own page with its own address, but all of them belong to the same program. And you edit everything on one program screen. Easy to use, easy to manage. 
 
-## Step 1: Meet the subpages
+## Meet the subpages
 
 Pedal CMS includes eight views of a program. The first is the program's main page; the other seven are subpages you can switch on or off.
 
@@ -34,7 +34,7 @@ The addresses are built from the program's address. For *Nursing (ADN)*, the cur
 !!! note "Note"
     It is possible to create your own subpages, but this requires the help of a developer. See [`pedalcms_register_program_subpage` in the phpDocs](https://pedalcms.com/docs/phpdocs/namespaces/default.html#function_pedalcms_register_program_subpage) 
 
-## Step 2: Turn subpages on or off site-wide
+## Turn subpages on or off site-wide
 
 1. Go to **Pedal > Settings** and open the **Subpages** tab.
 2. Find **Enabled Program Subpages**.
@@ -46,7 +46,7 @@ All seven are on by default. A subpage you switch off disappears from every prog
 !!! warning "Important"
     Turning **FAQs** off also removes the **FAQs** item from the dashboard menu, because the FAQ content type only exists while the FAQs subpage is enabled. Your existing FAQs are not deleted; switch the subpage back on and they return.
 
-## Step 3: Hide a subpage on one program
+## Hide a subpage on one program
 
 The site-wide switch is a blunt tool. Sometimes only one program needs a tab hidden. *Business Administration* might have no news, for example.
 
@@ -61,7 +61,7 @@ The site-wide setting always wins. A subpage that is off on the **Subpages** tab
 !!! warning "Common issue"
     A tab that is missing on a single program usually means one of those **Show ... Section** switches is off, or the program was created by an import or script and never saved in the editor. Open the program, check the switch, and click **Update** once.
 
-## Step 4: Rename a subpage
+## Rename a subpage
 
 Every subpage has two names, and both are on the **Subpages** tab.
 
@@ -77,7 +77,7 @@ Leave them empty to use the defaults. The gray placeholder shows the default, fo
 
 The **Overview** tab is not configurable here but it is possible for a developer to change it.
 
-## Step 5: Fill in each subpage
+## Fill in each subpage
 
 Each subpage has a tab in the **Program Info** box on the program edit screen. Most have a **Lead** field, which is text shown at the top of the subpage before the main content. For some subpages, this may be all the content that you want to appear. That's fine. 
 

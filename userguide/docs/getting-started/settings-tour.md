@@ -7,7 +7,7 @@
 
     **Time:** about 10 minutes · **You'll need:** Pedal CMS activated, and an Administrator account
 
-## Step 1: Open the settings page
+## Open the settings page
 
 1. In the dashboard menu, click **Pedal**.
 2. Click **Settings** at the bottom of the submenu.
@@ -20,7 +20,7 @@ The page is titled **Pedal CMS Settings**. You can also reach it from the **Plug
 !!! note
     If you cannot find the settings page at all and you are working with a developer, they may have hidden it on purpose to lock the configuration down. Check with them. Your saved settings keep working either way.
 
-## Step 2: The settings tabs
+## The settings tabs
 
 Across the top of the page you will see six tabs. Here is what each one is for.
 
@@ -36,7 +36,7 @@ Across the top of the page you will see six tabs. Here is what each one is for.
 !!! note 
     Some fields only appear when another is set a certain way. For example, **Custom Width** and **Custom Height** on the General tab appear only when **Header Image Size** is **Custom**. These are conditional fields. 
 
-## Step 3: Understand empty fields
+## Understand empty fields
 
 Many text fields show gray placeholder text, such as **Request Info** in the **Request Info Button Text** box. Placeholder text is not a saved value. It shows you the wording the plugin uses when you leave the field empty.
 
@@ -45,7 +45,7 @@ That gives you a simple rule: leave a field empty to keep the default wording, a
 !!! tip "Tip"
     Change one thing at a time while you are exploring the platform. Save, look at the front end, then change the something else. If something looks wrong, you will know exactly which change caused it.
 
-## Step 4: Save
+## Save
 
 1. In the top right corner of the page, click the **Save Changes** button.
 2. Look for the **Settings saved.** message at the top.

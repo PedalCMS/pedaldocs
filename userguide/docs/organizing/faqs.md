@@ -14,11 +14,11 @@ Some questions come up for every program: "Is financial aid available?" or "Can 
 
 If you copy the global questions onto forty program pages, you will have forty places to update when the financial aid office changes its hours. Pedal CMS avoids that. You write a shared question once, in a library of FAQs, and pick it on any program that needs it. You can also write a question directly on one program when it is unique to that program.
 
-## Step 1: Check that FAQs are available
+## Check that FAQs are available
 
 The **FAQs** menu in the dashboard exists only while the **FAQs** subpage is enabled. If you cannot see it, go to **Pedal > Settings > Subpages**, switch **FAQs** on under **Enabled Program Subpages**, and save.
 
-## Step 2: Create FAQ categories (optional)
+## Create FAQ categories (optional)
 
 FAQ categories let you group questions under headings such as *Admissions*, *Financial Aid* and *Student Life*.
 
@@ -27,7 +27,7 @@ FAQ categories let you group questions under headings such as *Admissions*, *Fin
 
 Categories are hierarchical, like WordPress's post categories. You can rename the grouping on the **Taxonomies** tab (**FAQ Category** block, **Singular Label** and **Plural Label**), although it has no **Enable** switch.
 
-## Step 3: Write a global FAQ
+## Write a global FAQ
 
 1. Go to **FAQs > Add New**.
 2. In the title box, which says **Enter the Question**, type the question: `Is financial aid available?`
@@ -37,7 +37,7 @@ Categories are hierarchical, like WordPress's post categories. You can rename th
 
 The title is the question and the body is the answer.
 
-## Step 4: Attach FAQs to a program
+## Attach FAQs to a program
 
 1. Edit a program, for example *Nursing (ADN)*, and open the **FAQs** tab in **Program Info**.
 2. Make sure **Show FAQs Section** is on.
@@ -63,7 +63,7 @@ Other settings on the tab:
 !!! warning "Common issue"
     Choosing **Global FAQ** and then typing a **Question** and **Answer** in the same row. Those boxes are ignored for global FAQs; the program shows the text from the FAQ post instead. If your wording does not appear, check the row's type.
 
-## Step 5: How the FAQs subpage looks
+## How the FAQs subpage looks
 
 The program's **FAQs** page (for example `/program/nursing-adn/faqs/`) shows each question as an expandable item. Visitors click the question to reveal the answer.
 
