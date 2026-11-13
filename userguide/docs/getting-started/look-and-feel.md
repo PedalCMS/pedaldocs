@@ -84,22 +84,4 @@ Why does this matter? Screen readers and other assistive technology use a page's
 
 Click **Save Changes**, then open `/programs/` in another browser tab. Check the colors, the header and the breadcrumbs.
 
-## Try it yourself
-
-Riverbend's brand color is a pale gold, `#f2c80d`, and the theme already shows breadcrumbs on every page. Describe the settings you would change on the **General** tab.
-
-??? success "Check your work"
-    - Set **Active Color** to `#f2c80d`.
-    - Set **Button Text Color** to a dark color such as `#1a1f23`, because white text on pale gold is hard to read.
-    - Switch **Display Breadcrumbs** off, so visitors do not see two trails.
-    - Leave **Presentation Mode** on **Tuxedo** unless it clashes with the theme, and leave **Main Content Wrapper Tag** on **div** unless you have an accessibility reason to change it.
-
-## Recap
-
-- **Presentation Mode** has three choices: **Ghost** (no styling), **Stealth** (basic layout styling) and **Tuxedo** (full styling, the default).
-- **Active Color** and **Button Text Color** control links and buttons; check contrast on a real button.
-- **Header Image Size** defaults to **Custom**, 450 by 336 pixels.
-- Breadcrumbs come from NavXT, Yoast SEO, All in One SEO or Rank Math; switch **Display Breadcrumbs** off if two trails appear.
-- **Main Content Wrapper Tag** is **div**, **main** or **section**; use **main** only if your theme has no main element.
-
 **Next up:** [Your first program](../programs/first-program.md)
