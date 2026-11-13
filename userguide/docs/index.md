@@ -17,7 +17,7 @@ Before we start, make sure your site meets these requirements:
 | WordPress | 6.9 |
 | PHP | 8.2 |
 
-You do not _need_ any other plugin but if you want breadcrumbs on your program pages, Pedal works with Breadcrumb NavXT, Yoast SEO, All in One SEO and Rank Math (see [Handle Breadcrumbs](getting-started/look-and-feel/index.md#step-4-handle-breadcrumbs) in _Look and feel_).
+You do not _need_ any other plugin but if you want breadcrumbs on your program pages, Pedal works with Breadcrumb NavXT, Yoast SEO, All in One SEO and Rank Math (see [Handle Breadcrumbs](getting-started/look-and-feel.md#handle-breadcrumbs) in _Look and feel_).
 
 ## Our running example
 

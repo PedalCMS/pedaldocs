@@ -32,7 +32,7 @@ Pedal includes eight views of a program. The first is the program's main page; t
 The addresses are built from the program's address. For *Nursing (ADN)*, the curriculum page is `https://riverbend.example/program/nursing-adn/curriculum/`. The row of tabs appears in the program header.
 
 !!! note "Note"
-    It is possible to create your own subpages, but this requires the help of a developer. See [`pedalcms_register_program_subpage` in the phpDocs](https://pedalcms.com/docs/phpdocs/namespaces/default.html#function_pedalcms_register_program_subpage) 
+    It is possible to create your own subpages, but this requires the help of a developer. See [`pedalcms_register_program_subpage` in the phpDocs](/docs/phpdocs/namespaces/default.html#function_pedalcms_register_program_subpage) 
 
 ## Turn subpages on or off site-wide
 
@@ -87,7 +87,7 @@ Each subpage has a tab in the **Program Info** box on the program edit screen. M
 - **Curriculum Lead**: an introduction shown first.
 - **Curriculum Sections**: click **Add Section**. Each section has a **Section Title** (for example *Core nursing courses*), **Section Content** (a note such as "Choose two of the following") and **Section Courses**, where you pick courses from your Course Catalog.
 
-On the **Subpages** tab, the **Curriculum** group has **Show Credits**. When on (the default), course tables on the curriculum page include a credits column. Courses come from the [Course Catalog](courses/course-catalog.md), so keep the catalog enabled if you use curriculum sections.
+On the **Subpages** tab, the **Curriculum** group has **Show Credits**. When on (the default), course tables on the curriculum page include a credits column. Courses come from the [Course Catalog](../courses/course-catalog.md), so keep the catalog enabled if you use curriculum sections.
 
 ### Careers
 
@@ -101,7 +101,7 @@ Without a careers post type, the **Related Careers** list has nothing to choose 
 
 - **Faculty & Staff Lead**.
 - **Group by Category** (on by default): when on, people are listed under headings such as *Faculty* and *Staff*, using their personnel category.
-- **Related Faculty & Staff**: pick people from your [directory](directory/faculty-staff.md).
+- **Related Faculty & Staff**: pick people from your [directory](../directory/faculty-staff.md).
 
 ### Cost
 
@@ -115,7 +115,7 @@ Without a careers post type, the **Related Careers** list has nothing to choose 
 
 ### FAQs
 
-- **Group FAQs by Category** (on by default), **FAQs Lead** and an **FAQ List**.  See [FAQs](organizing/faqs.md) for more details.
+- **Group FAQs by Category** (on by default), **FAQs Lead** and an **FAQ List**.  See [FAQs](../organizing/faqs.md) for more details.
 
 ### News
 

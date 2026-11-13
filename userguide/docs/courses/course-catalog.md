@@ -84,7 +84,7 @@ The **Registration Search URL** can include the placeholder `{$course_reg_key}`.
 
 Courses and people are linked both ways. When you add someone under **Related Personnel** on a course, the course appears under **Related Courses** on that person's profile, and the reverse is also true. You only need to make each connection once, from whichever side is easier.
 
-On the front end, the course page lists its instructors under your **Instructors Label**, and the profile lists the course under **Courses Taught**. This label can be changed (see [Faculty & staff directory](directory/faculty-staff.md)).
+On the front end, the course page lists its instructors under your **Instructors Label**, and the profile lists the course under **Courses Taught**. This label can be changed (see [Faculty & staff directory](../directory/faculty-staff.md)).
 
 ## Subjects and sessions
 
@@ -93,6 +93,6 @@ Two groupings are specific to courses:
 - **Subject** is the discipline, such as *Nursing* or *Welding*.
 - **Session** is when a course runs, such as *Fall*, *Spring* or *Summer*. Many colleges call this a term. In WordPress, a term is an instance of a taxonomy so we have chosen session for clarity's sake. You can change this label on the front end but Pedal will continue to refer to them as sessions in the dashboard.
 
-Create them under **Course Catalog > Subjects** and **Course Catalog > Sessions**, then add them in the **Subjects** and **Sessions** boxes on the course screen. These boxes work like WordPress tags: type a name and click **Add**, or pick from the most used. The course page shows its sessions as **Offered in Fall, Spring**. Both drive the **Subject** and **Session** filters on the catalog page. See [Taxonomies](organizing/taxonomies) fpr how to rename them.
+Create them under **Course Catalog > Subjects** and **Course Catalog > Sessions**, then add them in the **Subjects** and **Sessions** boxes on the course screen. These boxes work like WordPress tags: type a name and click **Add**, or pick from the most used. The course page shows its sessions as **Offered in Fall, Spring**. Both drive the **Subject** and **Session** filters on the catalog page. See [Taxonomies](../organizing/taxonomies.md) fpr how to rename them.
 
 **Next up:** [Faculty & staff directory](../directory/faculty-staff.md)

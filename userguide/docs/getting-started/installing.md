@@ -64,7 +64,7 @@ Activation adds new items to the left-hand dashboard menu. Take a moment to find
 | **Directory** | Your faculty and staff. Present while the directory is enabled. |
 | **FAQs** | Reusable questions and answers. Present while the FAQs subpage is enabled. |
 
-Under **Pedal** you will see **All Programs**, **Add New**, the groupings, and **Settings** at the bottom. The groupings are called taxonomies; they are explained in [Taxonomies](organizing/taxonomies.md).
+Under **Pedal** you will see **All Programs**, **Add New**, the groupings, and **Settings** at the bottom. The groupings are called taxonomies; they are explained in [Taxonomies](../organizing/taxonomies.md).
 
 You can also reach the settings from the **Plugins** screen: Pedal gets a **Settings** link next to the **Deactivate** link.
 

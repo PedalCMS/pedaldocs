@@ -22,7 +22,7 @@ We will create *Nursing (ADN)* at Riverbend.
 2. Type the program name in the title box: `Nursing (ADN)`.
 3. Optionally, set a **Featured image** in the box on the right. It appears in the page header and in the program search when images are turned on.
 
-Notice what is missing: there is no big text editor. Program content goes into the **Program Info** box below the title, which has a row of tabs: **Main**, **Curriculum**, **Careers**, **Faculty & Staff**, **Cost**, **Apply**, **FAQs** and **News** (depending on which Subpages you have enabled). This guide covers the **Main** tab (which maps to the overview page and the program sidebar). [Program Subpages](programs/subpages.md) covers the others.
+Notice what is missing: there is no big text editor. Program content goes into the **Program Info** box below the title, which has a row of tabs: **Main**, **Curriculum**, **Careers**, **Faculty & Staff**, **Cost**, **Apply**, **FAQs** and **News** (depending on which Subpages you have enabled). This guide covers the **Main** tab (which maps to the overview page and the program sidebar). [Program Subpages](subpages.md) covers the others.
 
 ## Fill in the Main tab
 
