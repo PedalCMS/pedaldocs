@@ -68,4 +68,4 @@ With **Group FAQs by Category** on, questions appear under a heading for each ca
 !!! tip "Tip"
     Give every FAQ a category if you group them. Otherwise, an **Uncategorized** heading will appear in the list and may seem accidental to visitors.
 
-**Next up:** [Blocks](../extras/blocks.md)
+**Next up:** [The terms grid shortcode](../extras/terms-grid-shortcode.md)

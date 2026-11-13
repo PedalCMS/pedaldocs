@@ -70,7 +70,6 @@ nav:
       - "Taxonomies": organizing/taxonomies.md
       - "FAQs": organizing/faqs.md
   - Extras:
-      - "Blocks": extras/blocks.md
       - "The terms grid shortcode": extras/terms-grid-shortcode.md
   - Help:
       - Troubleshooting: help/troubleshooting.md
@@ -84,3 +83,6 @@ nav:
       - PHP API reference: developers/api-reference.md
   - Contributing:
       - Writing the docs: contributing/writing-docs.md
+
+not_in_nav: 
+    extras/blocks.md
