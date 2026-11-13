@@ -2,7 +2,7 @@
 
 !!! abstract "In this guide"
     - What a taxonomy is, in plain language
-    - What each of Pedal CMS's groupings is for
+    - What each of Pedal's groupings is for
     - What **Enable**, **Enable Archive**, **Singular Label**, **Plural Label** and **Use With** do
     - How departments can depend on colleges
     - How to rename a grouping, for example "College" to "School"
@@ -13,7 +13,7 @@
 
 Imagine a filing cabinet with hundreds of folders and no labels. You could find anything, eventually, by opening every folder. Now imagine each folder has a colored tab: *Health Sciences*, *Trades & Technology*. Suddenly you can find things, and you can also ask questions such as "show me every folder with a blue tab."
 
-A **taxonomy** is a set of those labels, and each individual label is a **term**. WordPress itself has two taxonomies you already know: categories and tags. Pedal CMS adds seven of its own, so that visitors can filter programs, courses and people, and so that you can show a program's college or type on its page.
+A **taxonomy** is a set of those labels, and each individual label is a **term**. WordPress itself has two taxonomies you already know: categories and tags. Pedal adds seven of its own, so that visitors can filter programs, courses and people, and so that you can show a program's college or type on its page.
 
 ## Meet the groupings
 
@@ -77,7 +77,7 @@ Department, Instruction Mode, Subject and Session have no tidy pages of their ow
 
 ## Depends on College
 
-On a large campus, a department belongs to one college. *Nursing* belongs to *Health Sciences*, not to *Trades & Technology*. The **Depends on College** switch, on by default, tells Pedal CMS to enforce that.
+On a large campus, a department belongs to one college. *Nursing* belongs to *Health Sciences*, not to *Trades & Technology*. The **Depends on College** switch, on by default, tells Pedal to enforce that.
 
 When it is on:
 
@@ -114,7 +114,7 @@ A few places inside the settings screen itself, such as the **Search Filters** s
 
 ## Term images and extra fields
 
-When you edit a term, Pedal CMS adds extra fields:
+When you edit a term, Pedal adds extra fields:
 
 | Grouping | Extra fields |
 |---|---|
@@ -138,7 +138,7 @@ Riverbend wants "College" to read "School" everywhere, wants department choices 
 ## Recap
 
 - A taxonomy is a set of labels (terms) that group content.
-- Pedal CMS has seven groupings, plus FAQ Category.
+- Pedal has seven groupings, plus FAQ Category.
 - **Enable** turns a grouping on or off; **Enable Archive** gives terms their own pages, or sends links to a filtered list.
 - **Depends on College** limits department choices to the chosen college.
 - **Singular Label** and **Plural Label** rename a grouping without changing web addresses.

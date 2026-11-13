@@ -21,9 +21,9 @@ For hooks, use the [Hooks reference](hooks-reference.md) instead. It is generate
 
 [Open the PHP API reference](/docs/phpdocs/){ target="_blank" }
 
-The reference lives in the `phpdocs/` folder of the docs repository, next to this user guide, and is published at <https://pedalcms.com/docs/phpdocs/>. It is regenerated for every published Pedal CMS release, so it always matches the released version.
+The reference lives in the `phpdocs/` folder of the docs repository, next to this user guide, and is published at <https://pedalcms.com/docs/phpdocs/>. It is regenerated for every published Pedal release, so it always matches the released version.
 
-Each Pedal CMS GitHub Release also has a `pedalcms-api-docs-<tag>.zip` attached. It is the reference for that exact version, which helps when you work offline or a site runs an older release. Unzip it and open `index.html`.
+Each Pedal GitHub Release also has a `pedalcms-api-docs-<tag>.zip` attached. It is the reference for that exact version, which helps when you work offline or a site runs an older release. Unzip it and open `index.html`.
 
 !!! note
     The link points to `/docs/phpdocs/`, which is <https://pedalcms.com/docs/phpdocs/> once the docs are published. It does not resolve under `mkdocs serve`, so open `phpdocs/index.html` from the docs repository instead.

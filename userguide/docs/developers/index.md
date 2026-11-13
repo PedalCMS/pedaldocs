@@ -1,7 +1,7 @@
 # Developer handbook
 
 !!! abstract "In this guide"
-    - How Pedal CMS starts up and which classes do what.
+    - How Pedal starts up and which classes do what.
     - Which post types and taxonomies it registers, and their rewrite slugs.
     - How to read settings and labels from PHP.
     - Where to go next: template overrides, configuration, hooks and the API reference.
@@ -32,7 +32,7 @@ All classes live in the `PedalCMS\Core` namespace. The autoloader in `src/_autol
 | Class | File | Job |
 |---|---|---|
 | `Plugin` | `src/class-plugin.php` | Static home for settings (`get_option()`), labels (`get_label()`), the list of enabled post types and taxonomies, and template setup. |
-| `CustomContentObject` | `src/class-customcontentobject.php` | Abstract base for everything Pedal CMS registers. A singleton per class: call `Program::get_instance()`, never `new Program()`. |
+| `CustomContentObject` | `src/class-customcontentobject.php` | Abstract base for everything Pedal registers. A singleton per class: call `Program::get_instance()`, never `new Program()`. |
 | `CustomPostType` | `src/class-customposttype.php` | Base for post types. Registers the type and its meta. |
 | `CustomTaxonomy` | `src/class-customtaxonomy.php` | Base for taxonomies. Registers the taxonomy against its `$object_types`. |
 | `Program`, `Course`, `Person`, `FAQ` | `src/class-program.php` and siblings | The concrete post types. |
@@ -49,7 +49,7 @@ All classes live in the `PedalCMS\Core` namespace. The autoloader in `src/_autol
 
 ## Settings and fields come from CassetteCMF
 
-Pedal CMS does not use Advanced Custom Fields. The settings page and the meta boxes on programs, courses, people and taxonomy terms are all defined as arrays and handed to [CassetteCMF](https://github.com/PedalCMS/cassette-cmf), the `pedalcms/cassette-cmf` Composer package.
+Pedal does not use Advanced Custom Fields. The settings page and the meta boxes on programs, courses, people and taxonomy terms are all defined as arrays and handed to [CassetteCMF](https://github.com/PedalCMS/cassette-cmf), the `pedalcms/cassette-cmf` Composer package.
 
 The wiring is in `src/cassette.php`. On `init` at priority 5 it registers four custom field types (`taxonomy`, `relationship`, `conditional_checkbox`, `conditional_number`). On `init` at priority 10 it runs `cassette_init()`, which loads these definition files:
 

@@ -12,7 +12,7 @@
 
 The program search lists programs. Sometimes you want a different doorway: a homepage section that says "Explore our colleges" with a picture, a sentence and a link for each one. That is what the terms grid is for. It turns a grouping (Lesson 9) into a neat grid of cards.
 
-A **shortcode** is a short instruction in square brackets that you place in a page. When the page loads, WordPress replaces the instruction with the content it stands for. You write the instruction once and Pedal CMS draws the grid.
+A **shortcode** is a short instruction in square brackets that you place in a page. When the page loads, WordPress replaces the instruction with the content it stands for. You write the instruction once and Pedal draws the grid.
 
 ## Place the shortcode
 

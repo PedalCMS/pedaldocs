@@ -128,7 +128,7 @@ mkdocs build --strict
 
 The generated pages follow plugin releases.
 
-1. Once a day, the **Reference docs** workflow (`.github/workflows/reference.yml`) in this repository looks up the latest Pedal CMS release. You can also start it yourself from **Actions > Reference docs > Run workflow**.
+1. Once a day, the **Reference docs** workflow (`.github/workflows/reference.yml`) in this repository looks up the latest Pedal release. You can also start it yourself from **Actions > Reference docs > Run workflow**.
 2. If that release is not built yet, the workflow checks out the plugin at its tag, generates the hooks reference, and builds the PHP API reference with phpDocumentor.
 3. The workflow zips the API reference and attaches it to the plugin's GitHub Release as `pedalcms-api-docs-<tag>.zip`, replacing any earlier zip with that name. This step is skipped when the `PLUGIN_RELEASE_TOKEN` secret is not set, and a failed upload only logs a warning.
 4. The workflow opens a pull request against this repository on a branch named `phpdocs/<tag>`. It replaces `phpdocs/` in full, updates `userguide/docs/developers/hooks-reference.md` and records the tag in `.reference-tag`.

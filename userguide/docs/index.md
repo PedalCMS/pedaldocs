@@ -1,6 +1,6 @@
-# Welcome to Pedal CMS
+# Welcome to Pedal
 
-Pedal CMS turns a WordPress site into a program marketing site for a college, university, school or training provider. It adds a searchable program search, a course catalog and a faculty and staff directory, and it keeps them organized with groupings such as colleges, departments and program types.
+Pedal turns a WordPress site into a program marketing site for a college, university, school or training provider. It adds a searchable program search, a course catalog and a faculty and staff directory, and it keeps them organized with groupings such as colleges, departments and program types.
 
 ## Who this guide is for
 
@@ -17,7 +17,7 @@ Before we start, make sure your site meets these requirements:
 | WordPress | 6.9 |
 | PHP | 8.2 |
 
-You do not _need_ any other plugin but if you want breadcrumbs on your program pages, Pedal CMS works with Breadcrumb NavXT, Yoast SEO, All in One SEO and Rank Math (see [Handle Breadcrumbs](getting-started/look-and-feel/index.md#step-4-handle-breadcrumbs) in _Look and feel_).
+You do not _need_ any other plugin but if you want breadcrumbs on your program pages, Pedal works with Breadcrumb NavXT, Yoast SEO, All in One SEO and Rank Math (see [Handle Breadcrumbs](getting-started/look-and-feel/index.md#step-4-handle-breadcrumbs) in _Look and feel_).
 
 ## Our running example
 
@@ -27,6 +27,6 @@ Riverbend does not exist. Any resemblance to a real institution is a coincidence
 
 ## Menu names used in this guide
 
-We describe screens with bold labels and `>` signs. For example, **Pedal > Settings** means: click **Pedal** in the left-hand dashboard menu, then click **Settings** in the submenu that opens. Your theme and your other plugins may add menu items of their own, but these names come straight from Pedal CMS.
+We describe screens with bold labels and `>` signs. For example, **Pedal > Settings** means: click **Pedal** in the left-hand dashboard menu, then click **Settings** in the submenu that opens. Your theme and your other plugins may add menu items of their own, but these names come straight from Pedal.
 
-**Ready**? Let's get started with [Installing Pedal CMS](getting-started/installing.md).
+**Ready**? Let's get started with [Installing Pedal](getting-started/installing.md).

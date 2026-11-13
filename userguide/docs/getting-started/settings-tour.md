@@ -1,18 +1,18 @@
 # A tour of the settings
 
 !!! abstract "In this guide"
-    - Where the Pedal CMS settings live
+    - Where the Pedal settings live
     - What each of the six tabs is for
     - How saving works, and what to expect after you save
 
-    **Time:** about 10 minutes · **You'll need:** Pedal CMS activated, and an Administrator account
+    **Time:** about 10 minutes · **You'll need:** Pedal activated, and an Administrator account
 
 ## Open the settings page
 
 1. In the dashboard menu, click **Pedal**.
 2. Click **Settings** at the bottom of the submenu.
 
-The page is titled **Pedal CMS Settings**. You can also reach it from the **Plugins** screen by clicking the **Settings** link next to Pedal CMS.
+The page is titled **Pedal Settings**. You can also reach it from the **Plugins** screen by clicking the **Settings** link next to Pedal.
 
 !!! warning "Common issue"
     The settings are under **Pedal**, not under **Settings** in the main dashboard menu. Note that only users who can `manage_options` (Administrators) will see the page.

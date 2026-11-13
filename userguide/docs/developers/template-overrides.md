@@ -1,16 +1,16 @@
 # Template overrides
 
 !!! abstract "In this guide"
-    - How Pedal CMS chooses a template in classic themes and in block themes.
+    - How Pedal chooses a template in classic themes and in block themes.
     - Which templates you can override, and where the copy goes.
     - How to override one part of a page from a child theme.
     - How to add markup around a template without copying it.
 
-    **Time:** about 25 minutes · **You'll need:** a child theme (or a theme you control) and a Pedal CMS site with at least one program
+    **Time:** about 25 minutes · **You'll need:** a child theme (or a theme you control) and a Pedal site with at least one program
 
 ## Why overrides exist
 
-Every page Pedal CMS draws, from the program search to a faculty profile, is built from small PHP template files in the plugin's `templates/` folder. You could edit those files in place, but the next plugin update would erase your work. Overrides solve that: you copy a file into your theme, change the copy, and Pedal CMS prefers yours.
+Every page Pedal draws, from the program search to a faculty profile, is built from small PHP template files in the plugin's `templates/` folder. You could edit those files in place, but the next plugin update would erase your work. Overrides solve that: you copy a file into your theme, change the copy, and Pedal prefers yours.
 
 It is the same idea as a student turning in their own version of a worksheet. The plugin hands out its default, and if your theme has submitted a replacement with the same name, the replacement gets graded.
 
@@ -26,7 +26,7 @@ It is the same idea as a student turning in their own version of a worksheet. Th
 
 === "Block theme"
 
-    Pedal CMS registers one block template per content type with `register_block_template()`, under the plugin name `pedalcms` and a slug such as `single-pedalcms_program`. Each template is your theme's header template part, the `pedalcms/template-render` block, and your theme's footer template part.
+    Pedal registers one block template per content type with `register_block_template()`, under the plugin name `pedalcms` and a slug such as `single-pedalcms_program`. Each template is your theme's header template part, the `pedalcms/template-render` block, and your theme's footer template part.
 
     The `pedalcms/template-render` block is a server-rendered block whose `name` attribute holds the template name. Its render callback, `Plugin::render_legacy_template_block()`, only renders names that are in the plugin's own template map. It fires `pedalcms/before_main_content`, loads the template through `TemplateManager::load_template()`, then fires `pedalcms/after_main_content`.
 

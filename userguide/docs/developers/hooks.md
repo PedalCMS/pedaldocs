@@ -2,17 +2,17 @@
 
 !!! abstract "In this guide"
     - How actions and filters work, in one paragraph.
-    - How Pedal CMS names its hooks.
+    - How Pedal names its hooks.
     - Five recipes you can adapt for your own site.
     - How to read the generated hooks reference.
 
-    **Time:** about 20 minutes · **You'll need:** a place to put site code, and a Pedal CMS site with a few programs
+    **Time:** about 20 minutes · **You'll need:** a place to put site code, and a Pedal site with a few programs
 
 ## How hooks work
 
 WordPress lets a plugin announce "something is happening here" and lets other code respond. An **action** is an announcement: your callback runs, does something such as printing markup, and returns nothing that matters. A **filter** is a question: the plugin passes a value in, your callback may change it, and it must return a value, or the plugin receives nothing. You attach a callback with `add_action()` or `add_filter()`, giving the hook name, the callback, a priority (lower runs first, the default is 10) and the number of arguments your callback wants. If you ask for fewer arguments than the hook passes, you never see the rest.
 
-## How Pedal CMS names hooks
+## How Pedal names hooks
 
 Every hook starts with `pedalcms/`, followed by a path that describes where it lives:
 
@@ -61,7 +61,7 @@ The tab disappears from the subnav and the subpage template renders nothing. Thi
 
 ## Recipe 3: Add markup before the main content
 
-Pedal CMS wraps its pages in an element it opens on `pedalcms/before_main_content` and closes on `pedalcms/after_main_content`. The plugin's own callbacks, which print the opening and closing tags, are attached at the default priority of 10. Your priority decides where your output lands.
+Pedal wraps its pages in an element it opens on `pedalcms/before_main_content` and closes on `pedalcms/after_main_content`. The plugin's own callbacks, which print the opening and closing tags, are attached at the default priority of 10. Your priority decides where your output lands.
 
 ```php
 // Inside the wrapper, above the page content.
@@ -144,7 +144,7 @@ Riverbend wants the program sidebar link to say "Top of page" and wants it only 
 ## Recap
 
 - Actions announce, filters return a value. Always return from a filter.
-- Pedal CMS hooks are named `pedalcms/...`, with dynamic names where a template name or option name goes in braces.
+- Pedal hooks are named `pedalcms/...`, with dynamic names where a template name or option name goes in braces.
 - Priorities decide where output lands relative to the plugin's own callbacks.
 - The [Hooks reference](hooks-reference.md) lists every hook and links to its source.
 

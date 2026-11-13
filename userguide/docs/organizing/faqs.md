@@ -1,7 +1,7 @@
 # FAQs
 
 !!! abstract "In this guide"
-    - What FAQs and FAQ categories are in Pedal CMS
+    - What FAQs and FAQ categories are in Pedal
     - How to write a global FAQ once and reuse it on many programs
     - How to add a program-specific FAQ
     - How the FAQs subpage groups its questions
@@ -12,7 +12,7 @@
 
 Some questions come up for every program: "Is financial aid available?" or "Can I transfer credits?" Other questions belong to one program only: "Does the nursing program require a background check?"
 
-If you copy the global questions onto forty program pages, you will have forty places to update when the financial aid office changes its hours. Pedal CMS avoids that. You write a shared question once, in a library of FAQs, and pick it on any program that needs it. You can also write a question directly on one program when it is unique to that program.
+If you copy the global questions onto forty program pages, you will have forty places to update when the financial aid office changes its hours. Pedal avoids that. You write a shared question once, in a library of FAQs, and pick it on any program that needs it. You can also write a question directly on one program when it is unique to that program.
 
 ## Check that FAQs are available
 

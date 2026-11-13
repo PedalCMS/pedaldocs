@@ -2,7 +2,7 @@
 
 Every instructor has a list of the questions students ask most often. This is ours. Each answer points back to the lesson that explains the feature in full. Work from the top of an answer downward, because the most common cause comes first.
 
-## A Pedal CMS page says "Page not found" (404)
+## A Pedal page says "Page not found" (404)
 
 **Why it happens:** WordPress keeps a list of the web addresses it understands. If the list is out of date, addresses such as `/programs/` or `/program/nursing-adn/curriculum/` show a 404.
 
@@ -26,22 +26,22 @@ See [Lesson 5](../programs/subpages.md).
 
 ## The Careers tab is empty
 
-The **Related Careers** list chooses from a content type called `pedalcms_career`, and Pedal CMS does not create that content type. Unless a separate careers add-on provides it, the **Careers** tab can show only its lead text. If you do not use careers, switch the subpage off under **Pedal > Settings > Subpages**.
+The **Related Careers** list chooses from a content type called `pedalcms_career`, and Pedal does not create that content type. Unless a separate careers add-on provides it, the **Careers** tab can show only its lead text. If you do not use careers, switch the subpage off under **Pedal > Settings > Subpages**.
 
 See [Lesson 5](../programs/subpages.md).
 
 ## I see two sets of breadcrumbs
 
-Your theme and Pedal CMS are both drawing them. Go to **Pedal > Settings > General** and switch **Display Breadcrumbs** off. If you see none at all, make sure one of the supported breadcrumb plugins (Breadcrumb NavXT, Yoast SEO, All in One SEO or Rank Math) is active, because Pedal CMS draws no breadcrumbs without one.
+Your theme and Pedal are both drawing them. Go to **Pedal > Settings > General** and switch **Display Breadcrumbs** off. If you see none at all, make sure one of the supported breadcrumb plugins (Breadcrumb NavXT, Yoast SEO, All in One SEO or Rank Math) is active, because Pedal draws no breadcrumbs without one.
 
 See [Lesson 3](../getting-started/look-and-feel.md).
 
-## Pedal CMS clashes with my theme's styling
+## Pedal clashes with my theme's styling
 
 Try a lighter **Presentation Mode** under **Pedal > Settings > General**:
 
 - **Stealth** applies only basic layout styling and blends in with your theme.
-- **Ghost** loads no Pedal CMS styling at all.
+- **Ghost** loads no Pedal styling at all.
 
 If the colors are the problem rather than the layout, adjust **Active Color** and **Button Text Color** first.
 
@@ -50,7 +50,7 @@ See [Lesson 3](../getting-started/look-and-feel.md).
 ## I can't find the settings page
 
 1. Look under **Pedal** in the left-hand menu. The settings are at **Pedal > Settings**, not under the main **Settings** menu.
-2. Check the **Settings** link beside Pedal CMS on the **Plugins** screen.
+2. Check the **Settings** link beside Pedal on the **Plugins** screen.
 3. Make sure you are signed in as an Administrator. The page needs the permission to manage options.
 4. If none of that helps, your developer may have hidden the settings page on purpose. Ask them.
 

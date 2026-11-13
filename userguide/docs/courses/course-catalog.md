@@ -53,7 +53,7 @@ The **Configure Courses** group adjusts the wording on course pages.
 
 Riverbend calls credits "units", so it enters `units` and `unit`. Remember to fill in both the plural and the singular label.
 
-The **Registration Search URL** can include the placeholder `{$course_reg_key}`. Pedal CMS swaps it for the course's **Course Registration Key**, so a single address can lead to the right course in your registration system. The same warning from _Your first program_ applies: the address field may remove curly braces when you save, so reopen the field and check.
+The **Registration Search URL** can include the placeholder `{$course_reg_key}`. Pedal swaps it for the course's **Course Registration Key**, so a single address can lead to the right course in your registration system. The same warning from _Your first program_ applies: the address field may remove curly braces when you save, so reopen the field and check.
 
 !!! warning "Common issue"
     The **Register** button appears only when a course has a registration address, either from this setting or from the course's own **Registration Search URL**. An empty address means no button.

@@ -6,13 +6,13 @@
     - How application deadlines work, from site-wide to per-program
     - How to set a default featured image for programs
 
-    **Time:** about 20 minutes · **You'll need:** Pedal CMS activated; ideally one College and one Program Type already created (Lesson 9 explains them, but you can add one quickly under **Pedal > Colleges** and **Pedal > Program Types**)
+    **Time:** about 20 minutes · **You'll need:** Pedal activated; ideally one College and one Program Type already created (Lesson 9 explains them, but you can add one quickly under **Pedal > Colleges** and **Pedal > Program Types**)
 
 ## Background
 
-Programs are the heart of Pedal CMS. Everything else in the plugin, from courses to people, exists to support a program page that helps a prospective student decide, "Is this for me, and how do I start?"
+Programs are the heart of Pedal. Everything else in the plugin, from courses to people, exists to support a program page that helps a prospective student decide, "Is this for me, and how do I start?"
 
-A program has two kinds of information. Some of it belongs to the program alone, such as its overview text. Some of it is shared across the whole site, such as the address of your admissions form. Pedal CMS lets you set the shared values once on the settings page and override them on individual programs. Keeping that idea in mind makes this lesson much easier.
+A program has two kinds of information. Some of it belongs to the program alone, such as its overview text. Some of it is shared across the whole site, such as the address of your admissions form. Pedal lets you set the shared values once on the settings page and override them on individual programs. Keeping that idea in mind makes this lesson much easier.
 
 ## Create a program
 
@@ -79,7 +79,7 @@ Or at the program level on the **Main** tab:
 
 ### URL patterns
 
-The three URL fields accept a **pattern** rather than a fixed address. In a pattern you may write `{$program_guid}` and `{$program_slug}`, and Pedal CMS replaces them with the details of whichever program the visitor is looking at.
+The three URL fields accept a **pattern** rather than a fixed address. In a pattern you may write `{$program_guid}` and `{$program_slug}`, and Pedal replaces them with the details of whichever program the visitor is looking at.
 
 - `{$program_guid}` becomes the program's **Program GUID**.
 - `{$program_slug}` becomes the program's slug, the last part of its web address.
@@ -108,7 +108,7 @@ If a program has its own **Request Info URL** or **Apply Now URL**, that address
 
 ## Application deadlines
 
-You can list deadlines in three places, and Pedal CMS picks the most specific one that has content, in this order:
+You can list deadlines in three places, and Pedal picks the most specific one that has content, in this order:
 
 1. The program's own **Application Deadlines** (on the **Main** tab).
 2. The program's **Program Type**. When you edit a Program Type under **Pedal > Program Types**, it has its own **Application Deadlines** list, so every *Certificate* can share dates.

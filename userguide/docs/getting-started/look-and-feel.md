@@ -11,7 +11,7 @@
 
 ## Why this matters
 
-Pedal CMS has to live inside your WordPress theme. Your theme already has opinions about fonts, spacing and colors, and the plugin has opinions of its own. The **General** tab is where you decide who wins.
+Pedal has to live inside your WordPress theme. Your theme already has opinions about fonts, spacing and colors, and the plugin has opinions of its own. The **General** tab is where you decide who wins.
 
 Think of it as choosing a dress code for an event. You can ask everyone to wear formal clothes, to dress casually in a way that blends in, or to come as they are. The three presentation modes work the same way.
 
@@ -23,7 +23,7 @@ Think of it as choosing a dress code for an event. You can ask everyone to wear 
 
 | Option | What it does |
 |---|---|
-| **Ghost** | Does not style anything. No Pedal CMS styling is loaded, so your theme decides how everything looks. |
+| **Ghost** | Does not style anything. No Pedal styling is loaded, so your theme decides how everything looks. |
 | **Stealth** | Applies only basic styling to handle layout, and blends in with your current theme as much as possible. |
 | **Tuxedo** | A more refined and opinionated look. This is the default, and it is recommended for most sites. |
 
@@ -60,20 +60,20 @@ The default is **Custom** at 450 pixels wide and 336 pixels tall. That is a good
 
 Breadcrumbs are the small trail of links, such as *Home > Programs > Nursing (ADN)*, that show visitors where they are.
 
-Pedal CMS does not draw breadcrumbs itself. It asks a breadcrumb plugin to draw them, and it teaches that plugin about program subpages and filtered lists. Four plugins are supported:
+Pedal does not draw breadcrumbs itself. It asks a breadcrumb plugin to draw them, and it teaches that plugin about program subpages and filtered lists. Four plugins are supported:
 
 - Breadcrumb NavXT
 - Yoast SEO
 - All in One SEO
 - Rank Math
 
-If none of those is active, no breadcrumbs appear from Pedal CMS, and the **Display Breadcrumbs** setting has nothing to turn on or off.
+If none of those is active, no breadcrumbs appear from Pedal, and the **Display Breadcrumbs** setting has nothing to turn on or off.
 
 **Display Breadcrumbs** is on by default. Its description says, "Disable this if you have two showing up." That happens when your theme also draws its own breadcrumbs. To fix it, switch **Display Breadcrumbs** off and keep the theme's trail.
 
 ## Pick the wrapper tag
 
-Pedal CMS wraps its page content in one HTML element. **Main Content Wrapper Tag** lets you choose which: **div** (the default), **main** or **section**.
+Pedal wraps its page content in one HTML element. **Main Content Wrapper Tag** lets you choose which: **div** (the default), **main** or **section**.
 
 Why does this matter? Screen readers and other assistive technology use a page's `main` element to let visitors jump straight to the central content. Some themes do not mark up their content area that way. The setting's own description says, "Switch to 'main' to fix accessibility issues with some themes."
 

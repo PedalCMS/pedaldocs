@@ -16,7 +16,7 @@ Every program automatically gets a row of tabs (Subpages), and each tab is its o
 
 ## Meet the subpages
 
-Pedal CMS includes eight views of a program. The first is the program's main page; the other seven are subpages you can switch on or off.
+Pedal includes eight views of a program. The first is the program's main page; the other seven are subpages you can switch on or off.
 
 | Tab (default label) | Address ending | What it shows |
 |---|---|---|
@@ -93,7 +93,7 @@ On the **Subpages** tab, the **Curriculum** group has **Show Credits**. When on 
 
 - **Careers Lead** and **Related Careers**.
 
-The **Subpages** tab in the settings has a **Career Post Type** setting. Careers are a separate content type that Pedal CMS does not register itself. The setting allows you to choose a post type that you or another plugin has created. When set, you will be able to choose from careers to associate with a program which will show up in a linked list below the lead text. 
+The **Subpages** tab in the settings has a **Career Post Type** setting. Careers are a separate content type that Pedal does not register itself. The setting allows you to choose a post type that you or another plugin has created. When set, you will be able to choose from careers to associate with a program which will show up in a linked list below the lead text. 
 
 Without a careers post type, the **Related Careers** list has nothing to choose from, and the **Careers** tab can show only its lead text. If you do not want careers content, switch the subpage off.
 
