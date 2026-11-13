@@ -309,35 +309,28 @@ What the keys do, as `FilterManager::register()` defines them:
 
 The control is drawn on the `pedalcms/after_filters_fields` action, after the built-in fields, and is only drawn for the post types you listed. This example assumes your courses or programs already store a `riverbend_campus` meta value, for instance from a field you added with the filters above.
 
-## Try it yourself
+## Example
 
-Riverbend's *Welding Technology* page should show a "Safety certification" tab with the text "Complete the shop safety course before your first lab." Register it so it sits immediately before FAQs, and think about which file you must create.
+Riverbend's *Welding Technology* page should show a "Safety certification" tab with the text "Complete the shop safety course before your first lab." 
 
-??? success "Check your work"
-    Register a subpage with an order between 50 and 60, for example 58, and create the template in your child theme.
+So we register a subpage with an order between 50 and 60, for example 58, and create the template in your child theme.
 
-    ```php
-    add_action(
-        'pedalcms/register_subpages',
-        function () {
-            pedalcms_register_program_subpage(
-                'safety-certification',
-                [
-                    'title' => __( 'Safety certification', 'riverbend' ),
-                    'order' => 58,
-                ]
-            );
-        }
-    );
-    ```
+```php
+add_action(
+	'pedalcms/register_subpages',
+	function () {
+		pedalcms_register_program_subpage(
+			'safety-certification',
+			[
+				'title' => __( 'Safety certification', 'riverbend' ),
+				'order' => 58,
+			]
+		);
+	}
+);
+```
 
-    The template path is `pedalcms/single-program/subpages/safety-certification.php` in the child theme. Flush permalinks afterwards. To show the tab on *Welding Technology* only, add a `pedalcms/maybe_show_subpage` filter that returns `false` for this slug on other programs. See [Working with hooks](hooks.md) for that pattern.
+The template path in the theme is `pedalcms/single-program/subpages/safety-certification.php` in the child theme. Flush permalinks afterwards. To show the tab on *Welding Technology* only, add a `pedalcms/maybe_show_subpage` filter that returns `false` for this slug on other programs. See [Working with hooks](hooks.md) for that pattern.
 
-## Recap
-
-- `PEDALCMS_DISABLE_SETTINGS_UI` or `pedalcms/settings_ui_enabled` hides the settings screen without losing stored values.
-- `pedalcms/options/all` and `pedalcms/options/{$option}` override what `Plugin::get_option()` returns; `pedalcms/get_label` overrides labels.
-- Field filters receive nested CassetteCMF arrays. Append a metabox for post types and walk to a tab for settings.
-- Register subpages on `pedalcms/register_subpages` and archive filters on `pedalcms/register_filters`.
 
 **Next:** [Working with hooks](hooks.md)
