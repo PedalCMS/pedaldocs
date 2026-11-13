@@ -123,6 +123,6 @@ The deadlines appear in the program sidebar under the heading **Application Dead
 
 ## Step 5: A default featured image
 
-Not every program has a photo ready. On the **Programs** tab of the settings, **Default Program Featured Image** lets you pick one image that stands in for any program with no featured image of its own. A program that has its own featured image keeps it. 
+Not every program has a photo ready. On the **Programs** tab of the settings, **Default Program Featured Image** lets you pick one image that stands in for any program with no featured image of its own. A program that has its own featured image overrides that, of course. 
 
 **Next up:** [Program subpages](subpages.md)
