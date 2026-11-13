@@ -9,20 +9,22 @@
 
     **Time:** about 20 minutes · **You'll need:** the *Fundamentals of Nursing* course from Lesson 7 (optional but helpful)
 
-## Why this matters
+## Background
 
-Prospective students want to know who will teach them. Current students want to know whom to email. A directory answers both questions from one place, and because Pedal CMS stores people as their own content type, the same person can appear in the directory, on a program's **Faculty & Staff** tab, on a course page and in a program's contact list. You enter their details once.
+Seeing the friendly faces of the people that prospective students will be working with and learning from humanizes your institution's programs and can increase conversion rates from prospect to applicant. 
 
-## Step 1: Turn the directory on or off
+The faculty & staff directory in Pedal stores people as their own content type. The same person can appear in the directory, on a program's **Faculty & Staff** tab, on a course page and in a program's contact list. You only enter their details once. 
+
+## Turn the directory on or off
 
 1. Go to **Pedal > Settings** and open the **Directory** tab.
 2. The first switch is **Enable Faculty & Staff Directory**, described as "Activate the Personnel post type and archive."
 
-It is on by default. If you switch it off and save, the **Directory** menu disappears and `/directory/` stops working. Programs also stop listing people, because there are no people to list.
+It is on by default. If you switch it off and save, the **Directory** menu disappears and `/directory/` stops working. Programs also stop listing people, because there are no people to list, though it does not disable the **Faculty & Staff** subpage. 
 
-## Step 2: Set up the directory page
+## Set up the directory page
 
-The **Configure Directory** group sets up `/directory/`, the way the program search is set up in Lesson 6.
+The **Configure Directory** group sets up `/directory/`, the same way that the program search is set up.
 
 | Field | What it does |
 |---|---|
@@ -33,7 +35,7 @@ The **Configure Directory** group sets up `/directory/`, the way the program sea
 | **Archive Search Filters** | Choose from **Keyword**, **Personnel Category**, **College** and **Department**. All four are on by default; groupings you have turned off are left out. |
 
 !!! tip "Tip"
-    The default title **Personnel** sounds like a human resources memo. Most colleges prefer something like `Faculty & Staff`. Type it into **Archive Page Title**.
+    The default title **Personnel** sounds like a human resources memo. Most institutions prefer something like `Faculty & Staff`. Type it into **Archive Page Title**.
 
 The **Configure Personnel** group has two settings for individual profiles:
 
@@ -42,7 +44,7 @@ The **Configure Personnel** group has two settings for individual profiles:
 | **Personnel Header Background Image** | A background behind every profile's header. Only shown in **Tuxedo** mode. |
 | **Courses Taught Label** | The heading above a person's courses. Leave empty for **Courses Taught**. |
 
-## Step 3: Add a person
+## Add a person
 
 1. Go to **Directory > Add New**.
 2. In the title box, which says **Enter the Full Name**, type the person's name.
@@ -62,15 +64,10 @@ The **Configure Personnel** group has two settings for individual profiles:
 | **Department** | Their department. As with programs, when departments depend on colleges you choose the college first. |
 | **Related Courses** | Courses they teach. |
 
-For Riverbend, we enter the name `Maya Okafor`, Job Title `Professor of Nursing`, Person Category *Faculty*, College *College of Health Sciences*.
-
 !!! warning "Common issue"
     Directory lists are sorted alphabetically by the exact text in the title box, and that text is also the name visitors see. `Dr. Maya Okafor` sorts under D, and `Maya Okafor` sorts under M, which means first-name order. Decide on one convention before you add many people, and put titles such as "Dr." in the **Job Title** or the biography.
 
-!!! note
-    On a standard installation, people are edited with the classic WordPress editor: a title, a biography box and the **Person Info** box. A site can switch personnel to the block editor, but there is no setting for it on the settings screen. Lesson 11 explains more.
-
-## Step 4: Personnel categories
+## Personnel categories
 
 A **Personnel Category** is how you split the directory into groups such as *Faculty*, *Adjunct Faculty* and *Staff*. Create them under **Directory > Personnel Categories**. A person can have one category.
 
@@ -78,7 +75,7 @@ Categories do two jobs. They give visitors a filter on the directory page, and t
 
 Lesson 9 explains how to rename this grouping and how its archive pages work.
 
-## Step 5: Link people and courses
+## Link people and courses
 
 You connected an instructor to a course in Lesson 7. You can also do it from the person's side: open the person, use **Related Courses** in **Person Info**, and update. Either way the link shows up on both screens.
 
@@ -87,7 +84,7 @@ To show people on a program, open the program and:
 - **Faculty & Staff** tab, **Related Faculty & Staff**: the people shown on the program's Faculty & Staff subpage.
 - **Main** tab, **Related Contacts**: the people shown in the program sidebar under **Program Contact**.
 
-## Step 6: See the profile
+## The personnel profile
 
 A person's page at an address such as `https://riverbend.example/directory/maya-okafor/` shows, near the top:
 
@@ -99,23 +96,5 @@ A person's page at an address such as `https://riverbend.example/directory/maya-
 then their biography, and in a sidebar the courses they teach, under your **Courses Taught Label**. Email addresses are lightly scrambled in the page's code to discourage spam harvesters, but they work normally for visitors.
 
 In the directory list, each person appears with their photo, a linked name, job title, department and contact details.
-
-## Try it yourself
-
-Add *Dr. Maya Okafor* as described, give her the office `Health Sciences Building, 210`, link her to *Fundamentals of Nursing*, and make Riverbend's directory page say **Faculty & Staff**. Then make her appear as a contact on *Nursing (ADN)*.
-
-??? success "Check your work"
-    1. **Directory > Add New**. Title `Maya Okafor` (the "Dr." belongs in the biography or job title, which keeps sorting consistent). **Job Title** `Professor of Nursing`; **Office** `Health Sciences Building, 210`; **Person Category** *Faculty*; **College** *College of Health Sciences*; **Related Courses** *Fundamentals of Nursing*. **Publish**.
-    2. **Pedal > Settings > Directory**, **Archive Page Title** `Faculty & Staff`, **Save Changes**.
-    3. Edit *Nursing (ADN)*, **Main** tab, **Related Contacts**, select her, and click **Update**. She appears in the sidebar under **Program Contact**.
-
-## Recap
-
-- **Enable Faculty & Staff Directory** controls the directory and `/directory/`.
-- Each person has a title (their name), a biography, a photo and a **Person Info** box.
-- People are sorted by the exact text in the title box, so pick one naming convention.
-- **Personnel Category** groups people; a person has one.
-- People link to courses from either side, and to programs through **Related Faculty & Staff** and **Related Contacts**.
-- **Courses Taught Label** renames the courses heading on profiles.
 
 **Next up:** [Taxonomies](../organizing/taxonomies.md)
