@@ -55,7 +55,7 @@ markdown_extensions:
 nav:
   - Welcome: index.md
   - Getting started:
-      - "Installing Pedal CMS": getting-started/installing.md
+      - "Installing Pedal": getting-started/installing.md
       - "A tour of the settings": getting-started/settings-tour.md
       - "Look and feel": getting-started/look-and-feel.md
   - Programs:
