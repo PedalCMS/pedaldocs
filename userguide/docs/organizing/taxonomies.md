@@ -125,23 +125,4 @@ When you edit a term, Pedal adds extra fields:
 
 The featured image shows on the term's archive page and in a terms grid (Lesson 12). The header background only shows in **Tuxedo** presentation mode. A term's **Description** appears in a terms grid as well.
 
-## Try it yourself
-
-Riverbend wants "College" to read "School" everywhere, wants department choices limited to the chosen school, and wants *Instruction Mode* terms *In-person*, *Online* and *Hybrid*.
-
-??? success "Check your work"
-    1. **Pedal > Settings > Taxonomies**, **College** block: **Singular Label** `School`, **Plural Label** `Schools`.
-    2. In the **Department** block, leave **Depends on College** on. When you add departments under **Pedal > Departments**, set each one's **College** (now **School**).
-    3. Add the three terms under **Pedal > Instruction Modes**.
-    4. **Save Changes**, then edit a program and check that the **Department** list follows the chosen school.
-
-## Recap
-
-- A taxonomy is a set of labels (terms) that group content.
-- Pedal has seven groupings, plus FAQ Category.
-- **Enable** turns a grouping on or off; **Enable Archive** gives terms their own pages, or sends links to a filtered list.
-- **Depends on College** limits department choices to the chosen college.
-- **Singular Label** and **Plural Label** rename a grouping without changing web addresses.
-- **Use With** chooses whether College and Department apply to programs, courses and people.
-
 **Next up:** [FAQs](faqs.md)
