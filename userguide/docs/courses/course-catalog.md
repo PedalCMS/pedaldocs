@@ -8,14 +8,14 @@
 
     **Time:** about 20 minutes · **You'll need:** a few people in your directory (Lesson 8 shows how; you can come back and link them afterward)
 
-## Why this matters
+## Background
 
-A program page tells a student what they will study. The course catalog answers the next question: "What is this class, how many credits is it, and when can I take it?"
+A program page tells a student what they will study. The course catalog answers the next question: "What is this class, how many credits is it, who teaches it, and when can I take it?"
 
-Pedal CMS treats courses as their own content type so that one course can appear in many places, such as in the curriculum of two different programs, without you retyping it.
+The catalog is a marketing tool. It lists courses and can link out to your registration system. It does not take registrations itself.
 
-!!! note
-    The catalog is a marketing tool. It lists courses and links out to your registration system. It does not take registrations itself.
+!!! note 
+    Courses can be imported from another system just like any other WordPress content using another plugin such as [WP All Import](https://wordpress.org/plugins/wp-all-import/). 
 
 ## Step 1: Turn the catalog on or off
 
@@ -25,7 +25,7 @@ Pedal CMS treats courses as their own content type so that one course can appear
 It is on by default. If your institution does not want a public catalog, switch it off and click **Save Changes**. The **Course Catalog** menu then disappears and `/courses/` stops working.
 
 !!! warning "Common issue"
-    Program curriculum sections choose their courses from the catalog. If you switch the catalog off, there is nothing to choose from. Keep it on if you use the **Curriculum** subpage.
+    Program curriculum sections choose their courses from the catalog. If you switch the catalog off, there is nothing to choose from. You can use the **Curriculum** subpage without it but it will only display the lead text.
 
 ## Step 2: Set up the catalog page
 
@@ -53,7 +53,7 @@ The **Configure Courses** group adjusts the wording on course pages.
 
 Riverbend calls credits "units", so it enters `units` and `unit`. Remember to fill in both the plural and the singular label.
 
-The **Registration Search URL** can include the placeholder `{$course_reg_key}`. Pedal CMS swaps it for the course's **Course Registration Key**, so a single address can lead to the right course in your registration system. The same warning from Lesson 4 applies: the address field may remove curly braces when you save, so reopen the field and check.
+The **Registration Search URL** can include the placeholder `{$course_reg_key}`. Pedal CMS swaps it for the course's **Course Registration Key**, so a single address can lead to the right course in your registration system. The same warning from _Your first program_ applies: the address field may remove curly braces when you save, so reopen the field and check.
 
 !!! warning "Common issue"
     The **Register** button appears only when a course has a registration address, either from this setting or from the course's own **Registration Search URL**. An empty address means no button.
@@ -84,34 +84,15 @@ The **Registration Search URL** can include the placeholder `{$course_reg_key}`.
 
 Courses and people are linked both ways. When you add someone under **Related Personnel** on a course, the course appears under **Related Courses** on that person's profile, and the reverse is also true. You only need to make each connection once, from whichever side is easier.
 
-On the front end, the course page lists its instructors under your **Instructors Label**, and the profile lists the course under **Courses Taught** (Lesson 8 explains how to rename that).
+On the front end, the course page lists its instructors under your **Instructors Label**, and the profile lists the course under **Courses Taught**. This label can be changed (see [Faculty & staff directory](directory/faculty-staff.md)).
 
 ## Step 6: Subjects and sessions
 
 Two groupings are specific to courses:
 
 - **Subject** is the discipline, such as *Nursing* or *Welding*.
-- **Session** is when a course runs, such as *Fall*, *Spring* or *Summer*. Many colleges call this a term.
+- **Session** is when a course runs, such as *Fall*, *Spring* or *Summer*. Many colleges call this a term. In WordPress, a term is an instance of a taxonomy so we have chosen session for clarity's sake. You can change this label on the front end but Pedal will continue to refer to them as sessions in the dashboard.
 
-Create them under **Course Catalog > Subjects** and **Course Catalog > Sessions**, then add them in the **Subjects** and **Sessions** boxes on the course screen. These boxes work like WordPress tags: type a name and click **Add**, or pick from the most used. The course page shows its sessions as **Offered in Fall, Spring**. Both drive the **Subject** and **Session** filters on the catalog page. Lesson 9 shows how to rename them.
-
-## Try it yourself
-
-Add the course *Fundamentals of Nursing* (code `NUR101`, 4 credits, subject *Nursing*, sessions *Fall* and *Spring*), taught by *Dr. Maya Okafor*. Riverbend's registration system uses the address `https://register.riverbend.example/search?course=KEY`.
-
-??? success "Check your work"
-    1. **Course Catalog > Add New**, title `Fundamentals of Nursing`.
-    2. In **Course Info**: **Course Code** `NUR101`, **Credits** `4`, a **Short Description**, and **Related Personnel** *Dr. Maya Okafor*.
-    3. Add *Nursing* in the **Subjects** box and *Fall* and *Spring* in the **Sessions** box.
-    4. Under **Pedal > Settings > Course Catalog**, set **Registration Search URL** to `https://register.riverbend.example/search?course=KEY`, or set it on this one course.
-    5. **Publish**. The page title reads **Fundamentals of Nursing (NUR101)**, shows **4 credits** and **Offered in Fall, Spring**, and has a **Register** button.
-
-## Recap
-
-- **Enable Course Catalog** controls the whole catalog, including `/courses/`.
-- The **Configure Course Catalog** group sets the page; **Configure Courses** sets the labels.
-- Each course has a **Course Code**, **Credits**, a **Short Description** and **Related Personnel**.
-- Course and person links work in both directions.
-- **Subject** and **Session** are the two course-only groupings.
+Create them under **Course Catalog > Subjects** and **Course Catalog > Sessions**, then add them in the **Subjects** and **Sessions** boxes on the course screen. These boxes work like WordPress tags: type a name and click **Add**, or pick from the most used. The course page shows its sessions as **Offered in Fall, Spring**. Both drive the **Subject** and **Session** filters on the catalog page. See [Taxonomies](organizing/taxonomies) fpr how to rename them.
 
 **Next up:** [Faculty & staff directory](../directory/faculty-staff.md)
