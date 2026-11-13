@@ -14,7 +14,7 @@ Programs are the heart of Pedal CMS. Everything else in the plugin, from courses
 
 A program has two kinds of information. Some of it belongs to the program alone, such as its overview text. Some of it is shared across the whole site, such as the address of your admissions form. Pedal CMS lets you set the shared values once on the settings page and override them on individual programs. Keeping that idea in mind makes this lesson much easier.
 
- Create a program
+## Step 1: Create a program
 
 We will create *Nursing (ADN)* at Riverbend.
 
@@ -24,7 +24,7 @@ We will create *Nursing (ADN)* at Riverbend.
 
 Notice what is missing: there is no big text editor. Program content goes into the **Program Info** box below the title, which has a row of tabs: **Main**, **Curriculum**, **Careers**, **Faculty & Staff**, **Cost**, **Apply**, **FAQs** and **News** (depending on which Subpages you have enabled). This guide covers the **Main** tab (which maps to the overview page and the program sidebar). [Program Subpages](programs/subpages.md) covers the others.
 
- Fill in the Main tab
+## Step 2: Fill in the Main tab
 
 Work through the **Main** tab from top to bottom.
 
@@ -55,7 +55,7 @@ Work through the **Main** tab from top to bottom.
 
 You will see the title, the program type, a short line of details (instruction mode, prerequisites, college, department) and your overview.
 
- Set up the buttons
+## Step 3: Set up the buttons
 
 Program pages have three possible buttons: **Apply Now** and **Request Info** (at the top of the sidebar), and **Contact** (below any related contacts). A button only appears when it has an address to go to. If you see no buttons, no address has been configured. Go to WP Admin > Pedal > Settings > Programs and configure them.
 
@@ -106,7 +106,7 @@ For the same program, that becomes `https://www.riverbend.example/request-info/?
 
 If a program has its own **Request Info URL** or **Apply Now URL**, that address overrides the site-wide pattern.
 
- Application deadlines
+## Step 4: Application deadlines
 
 You can list deadlines in three places, and Pedal CMS picks the most specific one that has content, in this order:
 
@@ -121,7 +121,7 @@ The deadlines appear in the program sidebar under the heading **Application Dead
 !!! tip "Tip"
     Put your normal dates on the **Programs** tab and leave program-level lists empty. When the dates change next year you will edit one list, not dozens of programs.
 
- A default featured image
+## Step 5: A default featured image
 
 Not every program has a photo ready. On the **Programs** tab of the settings, **Default Program Featured Image** lets you pick one image that stands in for any program with no featured image of its own. A program that has its own featured image overrides that, of course. 
 

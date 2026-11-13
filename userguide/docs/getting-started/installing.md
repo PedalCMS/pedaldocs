@@ -14,13 +14,13 @@ Installing a plugin is routine, but Pedal CMS does a few things at activation th
 
 If you know what appears after activation, you will recognize a normal installation and spot a broken one.
 
- Check your requirements
+## Step 1: Check your requirements
 
 Pedal CMS needs **WordPress 6.9 or later** and **PHP 8.2 or later**. You can see your WordPress version at **Dashboard > Updates**, and your PHP version at **Tools > Site Health > Info > Server**.
 
 If you are not sure how to change your PHP version, your hosting provider's support team can do it in a few minutes.
 
- Install the plugin
+## Step 2: Install the plugin
 
 Choose the method that matches how you manage your site.
 
@@ -43,7 +43,7 @@ Choose the method that matches how you manage your site.
     1. Download `pedalcms.zip` and extract it on your computer.
     2. Upload the `pedalcms` folder to your site's `wp-content/plugins/` directory.
 
- Activate
+## Step 3: Activate
 
 1. Go to **Plugins > Installed Plugins**.
 2. Find **Pedal CMS** and click **Activate**.
@@ -53,7 +53,7 @@ Choose the method that matches how you manage your site.
 
 There is no setup wizard. Activation takes you straight back to the Plugins screen, and you configure everything yourself from the settings page, which we visit in the next lesson.
 
- See what changed
+## Step 4: See what changed
 
 Activation adds new items to the left-hand dashboard menu. Take a moment to find them.
 
@@ -68,7 +68,7 @@ Under **Pedal** you will see **All Programs**, **Add New**, the groupings, and *
 
 You can also reach the settings from the **Plugins** screen: Pedal CMS gets a **Settings** link next to the **Deactivate** link.
 
- Learn the front-end addresses
+## Step 5: Learn the front-end addresses
 
 Pedal CMS builds its public pages at predictable addresses. Replace `riverbend.example` with your own domain.
 
@@ -83,7 +83,7 @@ Pedal CMS builds its public pages at predictable addresses. Replace `riverbend.e
 
 Notice that the list pages use the **plural** (`programs`, `courses`) and a single item uses the **singular** (`program`, `course`). The directory uses `directory` for both. The last part of a single address is the item's **slug**, which WordPress builds from the title (for example, "Nursing (ADN)" becomes `nursing-adn`).
 
- If a page says "Page not found"
+## Step 6: If a page says "Page not found"
 
 WordPress keeps a list of the addresses it understands. Pedal CMS adds its addresses to that list when you activate it and whenever you save the Pedal settings. If you ever see a 404 error on a Pedal page, try refreshing the list yourself:
 
