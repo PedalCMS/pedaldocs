@@ -2,13 +2,11 @@
 
 Pedal CMS turns a WordPress site into a program marketing site for a college, university, school or training provider. It adds a searchable program search, a course catalog and a faculty and staff directory, and it keeps them organized with groupings such as colleges, departments and program types.
 
-This guide is a course. We will build a small site together, one lesson at a time, and every lesson ends with an exercise so you can check that you understood the material before moving on. If you have ever wished that a plugin came with a patient teacher, you are in the right place.
-
 ## Who this guide is for
 
-This guide is written for **site administrators and content editors**. You should be comfortable signing in to the WordPress dashboard, adding a post or a page, and uploading an image. You do not need to write code, and none of the lessons ask you to.
+This guide is written for **site administrators and content editors**. You should be comfortable signing in to the WordPress dashboard, adding a post or a page, and uploading an image. You do not need to write code, and none of the articles ask you to. However, at times, platform capabilities that are only available to developers are mentioned for the sake of awareness. 
 
-If you are a developer who needs hooks, template overrides, or the PHP API, head over to the [Developer handbook](developers/index.md). This guide deliberately stays on the dashboard side of the road.
+If you are a developer who needs hooks, template overrides, or the PHP API, head over to the [Developer handbook](developers/index.md). This guide deliberately stays on the WP Admin dashboard side of the road.
 
 ## Requirements
 
@@ -27,8 +25,8 @@ Throughout the docs, we will use a fictional school, **Riverbend Community Colle
 
 Riverbend does not exist. Any resemblance to a real institution is a coincidence, and every URL we use on the course ends in `.example` so it cannot point anywhere real. 
 
-## Menu names used in this course
+## Menu names used in this guide
 
 We describe screens with bold labels and `>` signs. For example, **Pedal > Settings** means: click **Pedal** in the left-hand dashboard menu, then click **Settings** in the submenu that opens. Your theme and your other plugins may add menu items of their own, but these names come straight from Pedal CMS.
 
-Ready? Let's begin with [Installing Pedal CMS](getting-started/installing.md).
+**Ready**? Let's get started with [Installing Pedal CMS](getting-started/installing.md).
