@@ -12,7 +12,7 @@ Every instructor has a list of the questions students ask most often. This is ou
 2. Check that the permalink structure is not **Plain**. Program subpages need a structure such as **Post name**.
 3. If the missing page belongs to the course catalog, the directory or a subpage, check that the feature is switched on (see below).
 
-See [Lesson 1](../getting-started/installing.md).
+See [Installing Pedal](../getting-started/installing.md).
 
 ## A program's subpage tab is missing
 
@@ -22,19 +22,19 @@ There are three possible causes. Check them in this order.
 2. **It is off for this program.** Edit the program, open the subpage's tab in **Program Info**, and check that the **Show ... Section** switch (for example **Show Cost Section**) is on.
 3. **The program was never saved in the editor.** Programs created by an import or script may have no saved switches, and then every subpage tab is hidden. Open the program and click **Update** once.
 
-See [Lesson 5](../programs/subpages.md).
+See [Program subpages](../programs/subpages.md).
 
 ## The Careers tab is empty
 
-The **Related Careers** list chooses from a content type called `pedalcms_career`, and Pedal does not create that content type. Unless a separate careers add-on provides it, the **Careers** tab can show only its lead text. If you do not use careers, switch the subpage off under **Pedal > Settings > Subpages**.
+The **Related Careers** list chooses from a content type called `pedalcms_career`, and Pedal does not create that content type. Unless a separate careers add-on provides it, the **Careers** tab can show only its lead text. If you do not want careers content, switch the subpage off under **Pedal > Settings > Subpages**.
 
-See [Lesson 5](../programs/subpages.md).
+See [Program subpages](../programs/subpages.md).
 
 ## I see two sets of breadcrumbs
 
 Your theme and Pedal are both drawing them. Go to **Pedal > Settings > General** and switch **Display Breadcrumbs** off. If you see none at all, make sure one of the supported breadcrumb plugins (Breadcrumb NavXT, Yoast SEO, All in One SEO or Rank Math) is active, because Pedal draws no breadcrumbs without one.
 
-See [Lesson 3](../getting-started/look-and-feel.md).
+See [Look and feel](../getting-started/look-and-feel.md).
 
 ## Pedal clashes with my theme's styling
 
@@ -45,7 +45,7 @@ Try a lighter **Presentation Mode** under **Pedal > Settings > General**:
 
 If the colors are the problem rather than the layout, adjust **Active Color** and **Button Text Color** first.
 
-See [Lesson 3](../getting-started/look-and-feel.md).
+See [Look and feel](../getting-started/look-and-feel.md).
 
 ## I can't find the settings page
 
@@ -54,7 +54,7 @@ See [Lesson 3](../getting-started/look-and-feel.md).
 3. Make sure you are signed in as an Administrator. The page needs the permission to manage options.
 4. If none of that helps, your developer may have hidden the settings page on purpose. Ask them.
 
-See [Lesson 2](../getting-started/settings-tour.md).
+See [A tour of the settings](../getting-started/settings-tour.md).
 
 ## A search filter isn't showing on the search, catalog or directory
 
@@ -62,37 +62,37 @@ See [Lesson 2](../getting-started/settings-tour.md).
 2. Check the filter's switch is on in **Search Filters** on the matching tab (**Programs**, **Course Catalog** or **Directory**). If you disabled a grouping and re-enabled it, switch the filter on again.
 3. Remember that each page offers only certain filters. For example, the program search has no **Subject** filter, and the directory has no **Instruction Mode** filter.
 
-See [Lesson 6](../programs/program-search.md) and [Lesson 9](../organizing/taxonomies.md).
+See [The program search](../programs/program-search.md) and [Taxonomies](../organizing/taxonomies.md).
 
 ## The Course Catalog or Directory menu has disappeared
 
 They can be switched off. Go to **Pedal > Settings**, open the **Course Catalog** tab and check **Enable Course Catalog**, or open the **Directory** tab and check **Enable Faculty & Staff Directory**. Save, and the menu returns. If the public page still shows a 404, save **Settings > Permalinks**.
 
-See [Lesson 7](../courses/course-catalog.md) and [Lesson 8](../directory/faculty-staff.md).
+See [Course catalog](../courses/course-catalog.md) and [Faculty & staff directory](../directory/faculty-staff.md).
 
 ## The FAQs menu has disappeared
 
 The FAQ content type exists only while the **FAQs** subpage is enabled. Switch it on under **Pedal > Settings > Subpages**.
 
-See [Lesson 10](../organizing/faqs.md).
+See [FAQs](../organizing/faqs.md).
 
 ## A button doesn't appear on a program page
 
 A button appears only when it has an address. Set **Apply Now URL**, **Request Info URL** or **Contact URL** under **Pedal > Settings > Programs**, or set the first two on the individual program. For a course, the **Register** button needs a **Registration Search URL**.
 
-See [Lesson 4](../programs/first-program.md) and [Lesson 7](../courses/course-catalog.md).
+See [Your first program](../programs/first-program.md) and [Course catalog](../courses/course-catalog.md).
 
 ## My button address still contains `$program_guid`
 
 In version 0.6.7, the address fields remove curly braces when you save, so `{$program_guid}` becomes `$program_guid`, and the placeholder is not replaced. Use a plain address on the settings page and set program-specific addresses on each program, or ask your developer to set the pattern from code.
 
-See [Lesson 4](../programs/first-program.md).
+See [Your first program](../programs/first-program.md).
 
 ## The Department list is empty when I edit a program
 
 When **Depends on College** is on, the **Department** list shows only departments belonging to the chosen college. Choose the **College** first. If the list still says **No departments found**, edit the department under **Pedal > Departments** and check that its **College** is set.
 
-See [Lesson 9](../organizing/taxonomies.md).
+See [Taxonomies](../organizing/taxonomies.md).
 
 ## A page shows a "critical error" after I add the terms grid shortcode
 
@@ -100,17 +100,6 @@ Check the spelling of `tax` (it needs the full name, such as `pedalcms_college`)
 
 See [Lesson 12](../extras/terms-grid-shortcode.md).
 
-## Job Title and Contact Info blocks are missing from the editor
-
-Those blocks exist only when personnel use the block editor, which is not the default and has no switch on the settings page. Use the **Person Info** box instead.
-
-See [Lesson 11](../extras/blocks.md).
-
-## A program page is missing its content in a block theme
-
-Check the template in the Site Editor (**Appearance > Editor > Templates**). It should contain one **PedalCMS Template** block. If it was deleted, ask your developer or reset the template to its default.
-
-See [Lesson 11](../extras/blocks.md).
 
 ## Still stuck?
 
