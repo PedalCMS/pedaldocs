@@ -65,10 +65,4 @@ Good entries come from good docblocks. When you add or change a public class, me
  */
 ```
 
-## Recap
-
-- The API reference covers `pedalcms.php` and `src/`, and is regenerated for every published release.
-- It lives in `phpdocs/` in the docs repository and is published at <https://pedalcms.com/docs/phpdocs/>; to preview changes before a release, build it with `tools/build-reference.sh` in the docs repository.
-- Summaries, `@since`, `@param` and `@return` make the reference and the hooks reference useful.
-
 **Next:** [Writing the docs](../contributing/writing-docs.md)
