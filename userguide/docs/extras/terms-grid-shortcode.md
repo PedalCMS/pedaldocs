@@ -14,7 +14,7 @@ The program search lists programs. Sometimes you want a different doorway: a hom
 
 A **shortcode** is a short instruction in square brackets that you place in a page. When the page loads, WordPress replaces the instruction with the content it stands for. You write the instruction once and Pedal CMS draws the grid.
 
-## Step 1: Place the shortcode
+ Place the shortcode
 
 1. Edit the page where the grid should appear, such as your home page.
 2. Add a **Shortcode** block (or type directly in the classic editor).
@@ -31,7 +31,7 @@ Each card shows the term's name as a link, its featured image, its description a
 !!! warning "Common issue"
     Only terms that are in use appear. A college with no programs, courses or people attached will not show up in the grid, which can make it look as if the shortcode is broken. Assign at least one item to each term.
 
-## Step 2: Choose the grouping with `tax`
+ Choose the grouping with `tax`
 
 The `tax` option is the only required one. It tells the grid which grouping to display. Use the grouping's **full name**, exactly as in this table:
 
@@ -53,7 +53,7 @@ Featured images come from the term's own **Featured Image** field, which exists 
 !!! warning "Common issue"
     If `tax` names a grouping that does not exist, or one you have switched off on the **Taxonomies** tab, the page can fail with a "critical error" instead of a friendly message. If a page breaks after you add the shortcode, check the spelling of `tax` and check the grouping is enabled.
 
-## Step 3: All the options
+ All the options
 
 | Option | Default | What it does |
 |---|---|---|
@@ -79,7 +79,7 @@ The link at the bottom of each card is built from three of these: `posts_link_pr
 !!! warning "Common issue"
     Switch options off with `0`, not with the word `false`. Shortcode options are plain text, and the grid treats the text `false` as "on". The grid then keeps the thing you wanted to hide. The value `0` (or empty quotes) works.
 
-## Step 4: Three worked examples
+ Three worked examples
 
 ### Example 1: A grid of colleges for the home page
 
@@ -108,7 +108,7 @@ Program types apply only to programs, so the count is meaningful: **Explore 4 Pr
 
 With the images and descriptions off, each card is a name and a link, such as **Meet 12 people**. Where a term's page does not exist, because **Enable Archive** is off, the link leads to the filtered directory instead (Lesson 9).
 
-## Step 5: If the grid looks unstyled
+ If the grid looks unstyled
 
 The grid's styles load only on a single page or post whose content includes the shortcode, and only when **Presentation Mode** is not **Ghost**. They do not load for a shortcode placed in a widget or a block-theme template. A grid that appears without styles is usually in one of those spots, or the shortcode is the very first thing in the content. Put a heading or a sentence of text before it.
 

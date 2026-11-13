@@ -15,7 +15,7 @@ Pedal CMS has to live inside your WordPress theme. Your theme already has opinio
 
 Think of it as choosing a dress code for an event. You can ask everyone to wear formal clothes, to dress casually in a way that blends in, or to come as they are. The three presentation modes work the same way.
 
-## Step 1: Choose a presentation mode
+ Choose a presentation mode
 
 1. Go to **Pedal > Settings** and open the **General** tab.
 2. Find **Presentation Mode**.
@@ -34,7 +34,7 @@ The description under the field says that "additional options will be available 
 !!! tip "Tip"
     Start with **Tuxedo**. If it fights with your theme, try **Stealth**. Choose **Ghost** only when your developer is writing their own styles, because pages will look plain until someone styles them.
 
-## Step 2: Set your colors
+ Set your colors
 
 Two color pickers control the colors of links and buttons.
 
@@ -46,7 +46,7 @@ Set **Active Color** to your brand color. Then look at a button on the front end
 !!! warning "Common issue"
     Picking a pale brand color and leaving the button text white. The button looks fine in the picker but is unreadable on the page. Always check a real button after you save.
 
-## Step 3: Choose the header image size
+ Choose the header image size
 
 **Header Image Size** controls the size of the featured image shown in page headers, such as the picture at the top of a program page.
 
@@ -56,7 +56,7 @@ Set **Active Color** to your brand color. Then look at a button on the front end
 
 The default is **Custom** at 450 pixels wide and 336 pixels tall. That is a good starting point for most layouts.
 
-## Step 4: Handle breadcrumbs
+ Handle breadcrumbs
 
 Breadcrumbs are the small trail of links, such as *Home > Programs > Nursing (ADN)*, that show visitors where they are.
 
@@ -71,7 +71,7 @@ If none of those is active, no breadcrumbs appear from Pedal CMS, and the **Disp
 
 **Display Breadcrumbs** is on by default. Its description says, "Disable this if you have two showing up." That happens when your theme also draws its own breadcrumbs. To fix it, switch **Display Breadcrumbs** off and keep the theme's trail.
 
-## Step 5: Pick the wrapper tag
+ Pick the wrapper tag
 
 Pedal CMS wraps its page content in one HTML element. **Main Content Wrapper Tag** lets you choose which: **div** (the default), **main** or **section**.
 
@@ -80,7 +80,7 @@ Why does this matter? Screen readers and other assistive technology use a page's
 !!! warning "Common issue"
     A page should have only one `main` element. If your theme already provides one, leave this on **div**. If you are unsure, ask your developer, or test with a screen reader or an accessibility checker after you switch.
 
-## Step 6: Save and look
+ Save and look
 
 Click **Save Changes**, then open `/programs/` in another browser tab. Check the colors, the header and the breadcrumbs.
 

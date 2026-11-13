@@ -15,7 +15,7 @@ Imagine a filing cabinet with hundreds of folders and no labels. You could find 
 
 A **taxonomy** is a set of those labels, and each individual label is a **term**. WordPress itself has two taxonomies you already know: categories and tags. Pedal CMS adds seven of its own, so that visitors can filter programs, courses and people, and so that you can show a program's college or type on its page.
 
-## Step 1: Meet the groupings
+ Meet the groupings
 
 | Grouping | Used for | Where it appears in the dashboard |
 |---|---|---|
@@ -31,7 +31,7 @@ There is also **FAQ Category** for organizing FAQs, which Lesson 10 covers.
 
 To add terms, open the grouping's menu item (for example **Pedal > Colleges**), type a name and click the add button. Create *College of Health Sciences* and *College of Trades & Technology* now.
 
-## Step 2: Open the Taxonomies tab
+ Open the Taxonomies tab
 
 Go to **Pedal > Settings** and open the **Taxonomies** tab. Each grouping has its own block of settings. Here is what the settings mean.
 
@@ -59,7 +59,7 @@ Not every grouping has every setting.
 !!! warning "Common issue"
     Switching a grouping off hides it from the dashboard menus, the search filters and the front-end pages, but it does not delete your terms. Switch it back on and they return. Remember to re-check **Search Filters** on the **Programs**, **Course Catalog** and **Directory** tabs afterward.
 
-## Step 3: Archives, and what happens when they are off
+ Archives, and what happens when they are off
 
 An **archive** is a page that lists everything that has a given term. Visitors reach it by clicking, say, the college name on a program page. College, Program Type and Personnel Category get tidy archive pages at addresses such as:
 
@@ -75,7 +75,7 @@ Archives are the nicer experience, because each term gets its own page, heading 
 
 Department, Instruction Mode, Subject and Session have no tidy pages of their own. Their links go to filtered lists. Department shows an **Enable Archive** switch for consistency, but in version 0.6.7 its links lead to a filtered list either way.
 
-## Step 4: Depends on College
+ Depends on College
 
 On a large campus, a department belongs to one college. *Nursing* belongs to *Health Sciences*, not to *Trades & Technology*. The **Depends on College** switch, on by default, tells Pedal CMS to enforce that.
 
@@ -91,13 +91,13 @@ The **Enable** switch for Department also controls the other two. Switching Depa
 !!! tip "Tip"
     If your institution does not have colleges, switch **College** off. If your colleges and departments are independent, switch **Depends on College** off. Do not leave a grouping on out of habit; every filter you show is one more thing for visitors to figure out.
 
-## Step 5: Use With
+ Use With
 
 College and Department can apply to more than one content type. **Use With** has a switch for each: **Programs**, **Course Catalog** and **Faculty & Staff Directory**. All three are on by default.
 
 If Riverbend wants colleges on programs and people but not on courses, switch **Course Catalog** off under **Use With** for College.
 
-## Step 6: Rename a grouping
+ Rename a grouping
 
 Some institutions say "School" instead of "College" and "Term" instead of "Session". You can rename any grouping:
 
@@ -112,7 +112,7 @@ Fill in both labels. If you set only one, the other keeps its default and you wi
 
 A few places inside the settings screen itself, such as the **Search Filters** switches, may keep the original name.
 
-## Step 7: Term images and extra fields
+ Term images and extra fields
 
 When you edit a term, Pedal CMS adds extra fields:
 

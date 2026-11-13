@@ -17,7 +17,7 @@ The catalog is a marketing tool. It lists courses and can link out to your regis
 !!! note 
     Courses can be imported from another system just like any other WordPress content using another plugin such as [WP All Import](https://wordpress.org/plugins/wp-all-import/). 
 
-## Step 1: Turn the catalog on or off
+ Turn the catalog on or off
 
 1. Go to **Pedal > Settings** and open the **Course Catalog** tab.
 2. The first switch is **Enable Course Catalog**. Its description says, "Activate the Course Catalog post type and archive."
@@ -27,7 +27,7 @@ It is on by default. If your institution does not want a public catalog, switch 
 !!! warning "Common issue"
     Program curriculum sections choose their courses from the catalog. If you switch the catalog off, there is nothing to choose from. You can use the **Curriculum** subpage without it but it will only display the lead text.
 
-## Step 2: Set up the catalog page
+ Set up the catalog page
 
 The **Configure Course Catalog** group works like the program search (Lesson 6).
 
@@ -39,7 +39,7 @@ The **Configure Course Catalog** group works like the program search (Lesson 6).
 | **Header Background Image** | A background behind the header. Only shown in **Tuxedo** presentation mode. |
 | **Search Filters** | Which filters appear: **Keyword**, **Session**, **Subject**, **Instruction Mode**, **College**, **Department**. All six are on by default, and any grouping you have disabled is left out. |
 
-## Step 3: Set the course labels
+ Set the course labels
 
 The **Configure Courses** group adjusts the wording on course pages.
 
@@ -58,7 +58,7 @@ The **Registration Search URL** can include the placeholder `{$course_reg_key}`.
 !!! warning "Common issue"
     The **Register** button appears only when a course has a registration address, either from this setting or from the course's own **Registration Search URL**. An empty address means no button.
 
-## Step 4: Add a course
+ Add a course
 
 1. Go to **Course Catalog > Add New**.
 2. Enter the course name as the title, for example `Fundamentals of Nursing`.
@@ -80,13 +80,13 @@ The **Registration Search URL** can include the placeholder `{$course_reg_key}`.
 !!! tip "Tip"
     Fill in **Short Description** for every course. In the catalog list it is what visitors read to decide whether to click.
 
-## Step 5: Link instructors
+ Link instructors
 
 Courses and people are linked both ways. When you add someone under **Related Personnel** on a course, the course appears under **Related Courses** on that person's profile, and the reverse is also true. You only need to make each connection once, from whichever side is easier.
 
 On the front end, the course page lists its instructors under your **Instructors Label**, and the profile lists the course under **Courses Taught**. This label can be changed (see [Faculty & staff directory](directory/faculty-staff.md)).
 
-## Step 6: Subjects and sessions
+ Subjects and sessions
 
 Two groupings are specific to courses:
 
