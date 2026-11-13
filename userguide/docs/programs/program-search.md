@@ -16,7 +16,7 @@ Pedal builds that page automatically at `/programs/`. You can dress it up and de
 
 ## The default page
 
-Visit `https://riverbend.example/programs/`. From top to bottom you will see:
+Visit `https://riverbend.example/programs/`. From top to bottom, you will see:
 
 1. Breadcrumbs, if you use [a supported breadcrumb plugin](getting-started/look-and-feel.md#step-4-handle-breadcrumbs) and have them enabled.
 2. A header with the page title, description and image (if you use [Tuxedo Mode](getting-started/look-and-feel.md#step-1-choose-a-presentation-mode)).

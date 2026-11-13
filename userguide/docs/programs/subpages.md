@@ -12,7 +12,7 @@
 
 Subpages are central to Pedal's methodology. They turn every program into a microsite, giving prospective students a complete view of the program from basic information to the team that they will work with and even how much they can expect to pay for it. No hunting all over the site and potentially getting lost or distracted. This proven strategy was why we built Pedal. 
 
-Every program automatically gets a row of tabs (Subpages), and each tab is its own page with its own address, but all of them belong to the same program. And you edit everything on one program screen. Easy to use, easy to manage. 
+Every program automatically gets a row of tabs (subpages), and each tab is its own page with its own address, but all of them belong to the same program. And you edit everything on one program screen. Easy to use, easy to manage. 
 
 ## Meet the subpages
 
