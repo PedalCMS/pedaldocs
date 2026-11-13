@@ -64,7 +64,7 @@ The **Configure Personnel** group has two settings for individual profiles:
 
 For Riverbend, we enter the name `Maya Okafor`, Job Title `Professor of Nursing`, Person Category *Faculty*, College *College of Health Sciences*.
 
-!!! warning "Common mistake"
+!!! warning "Common issue"
     Directory lists are sorted alphabetically by the exact text in the title box, and that text is also the name visitors see. `Dr. Maya Okafor` sorts under D, and `Maya Okafor` sorts under M, which means first-name order. Decide on one convention before you add many people, and put titles such as "Dr." in the **Job Title** or the biography.
 
 !!! note

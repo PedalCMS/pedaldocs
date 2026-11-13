@@ -14,7 +14,7 @@
 
 The page is titled **Pedal CMS Settings**. You can also reach it from the **Plugins** screen by clicking the **Settings** link next to Pedal CMS.
 
-!!! warning "Common mistake"
+!!! warning "Common issue"
     The settings are under **Pedal**, not under **Settings** in the main dashboard menu. Note that only users who can `manage_options` (Administrators) will see the page.
 
 !!! note

@@ -14,7 +14,7 @@ The settings screen covers what most sites need. Code takes over when a rule has
 
 Every snippet below is for Riverbend Community College and belongs in your own code, never in the plugin folder.
 
-!!! warning "Common mistake"
+!!! warning "Common issue"
     Several of these filters run during `init`. Register your callbacks earlier than that: at the top level of an mu-plugin or `functions.php`, or on `plugins_loaded` or `after_setup_theme`. The field filters in particular must be in place before `cassette_init()` runs on `init` at priority 10, so a callback added on `init` at the default priority is not safe.
 
 ## Hiding the settings UI

@@ -43,7 +43,7 @@ Two color pickers control the colors of links and buttons.
 
 Set **Active Color** to your brand color. Then look at a button on the front end. If white text is hard to read on your color, change **Button Text Color**. A light yellow button needs dark text, for example.
 
-!!! warning "Common mistake"
+!!! warning "Common issue"
     Picking a pale brand color and leaving the button text white. The button looks fine in the picker but is unreadable on the page. Always check a real button after you save.
 
 ## Step 3: Choose the header image size
@@ -77,7 +77,7 @@ Pedal CMS wraps its page content in one HTML element. **Main Content Wrapper Tag
 
 Why does this matter? Screen readers and other assistive technology use a page's `main` element to let visitors jump straight to the central content. Some themes do not mark up their content area that way. The setting's own description says, "Switch to 'main' to fix accessibility issues with some themes."
 
-!!! warning "Common mistake"
+!!! warning "Common issue"
     A page should have only one `main` element. If your theme already provides one, leave this on **div**. If you are unsure, ask your developer, or test with a screen reader or an accessibility checker after you switch.
 
 ## Step 6: Save and look

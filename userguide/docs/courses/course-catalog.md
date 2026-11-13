@@ -24,7 +24,7 @@ Pedal CMS treats courses as their own content type so that one course can appear
 
 It is on by default. If your institution does not want a public catalog, switch it off and click **Save Changes**. The **Course Catalog** menu then disappears and `/courses/` stops working.
 
-!!! warning "Common mistake"
+!!! warning "Common issue"
     Program curriculum sections choose their courses from the catalog. If you switch the catalog off, there is nothing to choose from. Keep it on if you use the **Curriculum** subpage.
 
 ## Step 2: Set up the catalog page
@@ -55,7 +55,7 @@ Riverbend calls credits "units", so it enters `units` and `unit`. Remember to fi
 
 The **Registration Search URL** can include the placeholder `{$course_reg_key}`. Pedal CMS swaps it for the course's **Course Registration Key**, so a single address can lead to the right course in your registration system. The same warning from Lesson 4 applies: the address field may remove curly braces when you save, so reopen the field and check.
 
-!!! warning "Common mistake"
+!!! warning "Common issue"
     The **Register** button appears only when a course has a registration address, either from this setting or from the course's own **Registration Search URL**. An empty address means no button.
 
 ## Step 4: Add a course

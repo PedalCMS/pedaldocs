@@ -44,7 +44,7 @@ Work through the **Main** tab from top to bottom.
 | **Application Deadlines** | A list of deadlines for this program. Click **Add Deadline**, then fill in **Label** (for example *Fall*) and **Info** (for example *June 24th*). |
 | **Related Contacts** | People from your directory who answer questions about this program. They appear in the program sidebar. |
 
-!!! warning "Common mistake"
+!!! warning "Common issue"
     **Prerequisites** is only a Yes or No switch. It does not hold a list of required courses. Write the actual requirements in **Overview Content** or on another subpage, and use the switch to flag that prerequisites exist.
 
 !!! note "Contact Us URL"

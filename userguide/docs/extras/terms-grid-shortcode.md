@@ -28,7 +28,7 @@ A **shortcode** is a short instruction in square brackets that you place in a pa
 
 Each card shows the term's name as a link, its featured image, its description and a link such as **Explore 3 Posts**. A card with no image shows no picture, and a card with no description shows an empty space.
 
-!!! warning "Common mistake"
+!!! warning "Common issue"
     Only terms that are in use appear. A college with no programs, courses or people attached will not show up in the grid, which can make it look as if the shortcode is broken. Assign at least one item to each term.
 
 ## Step 2: Choose the grouping with `tax`
@@ -50,7 +50,7 @@ Short names such as `college` do not work. If you leave `tax` out, the page show
 
 Featured images come from the term's own **Featured Image** field, which exists for colleges, departments, program types and personnel categories.
 
-!!! warning "Common mistake"
+!!! warning "Common issue"
     If `tax` names a grouping that does not exist, or one you have switched off on the **Taxonomies** tab, the page can fail with a "critical error" instead of a friendly message. If a page breaks after you add the shortcode, check the spelling of `tax` and check the grouping is enabled.
 
 ## Step 3: All the options
@@ -73,10 +73,10 @@ Featured images come from the term's own **Featured Image** field, which exists 
 
 The link at the bottom of each card is built from three of these: `posts_link_prefix`, the number, then `label_posts`. With the defaults it reads **Explore 3 Posts**. With `label_posts="Programs"` it reads **Explore 3 Programs**.
 
-!!! warning "Common mistake"
+!!! warning "Common issue"
     **Always include `label_sr_text="in %s"`** (with the letter `s`). In version 0.6.7 the built-in default is `in %`, which is incomplete, and with it the page stops with an error whenever the link is shown. Writing `in %s` is a one-time habit that avoids it, and the `%s` is replaced by the term's name. If you hide the link with `show_posts_link="0"`, the problem does not occur.
 
-!!! warning "Common mistake"
+!!! warning "Common issue"
     Switch options off with `0`, not with the word `false`. Shortcode options are plain text, and the grid treats the text `false` as "on". The grid then keeps the thing you wanted to hide. The value `0` (or empty quotes) works.
 
 ## Step 4: Three worked examples

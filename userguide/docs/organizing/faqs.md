@@ -60,7 +60,7 @@ Other settings on the tab:
 - **FAQs Lead**: introductory text shown above the list.
 - **Group FAQs by Category** (on by default): see Step 5.
 
-!!! warning "Common mistake"
+!!! warning "Common issue"
     Choosing **Global FAQ** and then typing a **Question** and **Answer** in the same row. Those boxes are ignored for global FAQs; the program shows the text from the FAQ post instead. If your wording does not appear, check the row's type.
 
 ## Step 5: How the FAQs subpage looks

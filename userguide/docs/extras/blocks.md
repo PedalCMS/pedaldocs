@@ -51,7 +51,7 @@ In the Site Editor you will see the block as a placeholder box that reads, for e
 
 You can see the templates in the Site Editor: go to **Appearance > Editor**, then **Templates**. You may want to edit them to change the header or footer, or to add a banner above the Pedal CMS content.
 
-!!! warning "Common mistake"
+!!! warning "Common issue"
     Do not delete the **PedalCMS Template** block from one of these templates. Without it, the page still has a header and footer but the program, course or directory content disappears. You can add other blocks above or below it, but each template may contain only one **PedalCMS Template** block.
 
 On a classic theme, none of this applies. The plugin hooks into your classic theme's templates directly and there is no template block to manage.

@@ -56,7 +56,7 @@ Not every grouping has every setting.
 | **Personnel Category** | Yes | Yes | Yes | |
 | **FAQ Category** | No | No | Yes | |
 
-!!! warning "Common mistake"
+!!! warning "Common issue"
     Switching a grouping off hides it from the dashboard menus, the search filters and the front-end pages, but it does not delete your terms. Switch it back on and they return. Remember to re-check **Search Filters** on the **Programs**, **Course Catalog** and **Directory** tabs afterward.
 
 ## Step 3: Archives, and what happens when they are off

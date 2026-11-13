@@ -53,7 +53,7 @@ The reader is a student in a hands-on class, and you are the instructor.
 
 - Use second person and an inclusive "we" or "let's". Be warm and patient, never condescending. Avoid "simply", "just" and "obviously".
 - Explain the **why** before the **how**. A short real-world analogy is welcome when it genuinely helps, at most one per lesson.
-- Anticipate mistakes the way a teacher who has run the class many times would. Use `!!! warning "Common mistake"` for pitfalls and `!!! tip "Tip"` for shared experience.
+- Anticipate mistakes the way a teacher who has run the class many times would. Use `!!! warning "Common issue"` for pitfalls and `!!! tip "Tip"` for shared experience.
 - Keep paragraphs to four sentences or fewer. Write procedures as numbered steps, one action per step, and bold the exact UI labels.
 - Describe screens with bold labels and `>` paths, such as **Pedal > Settings > Subpages**. Do not add images or image placeholders.
 - Write US English. Use no emojis, no marketing adjectives, and at most one exclamation mark per page.

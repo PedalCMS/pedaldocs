@@ -32,7 +32,7 @@ It is the same idea as a student turning in their own version of a worksheet. Th
 
     Because the block goes through `load_template()`, overrides in your theme folder work in block themes too. The Site Editor can also customize the block template itself.
 
-!!! warning "Common mistake"
+!!! warning "Common issue"
     Do not delete the `PedalCMS Template` block from a block template in the Site Editor. It is the only thing that renders the program, course or person content.
 
 ## Where your copy goes
