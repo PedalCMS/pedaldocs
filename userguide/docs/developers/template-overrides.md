@@ -172,31 +172,24 @@ add_filter(
 
 The plugin's own settings use the same filter at priority 5 (see `options_template_defaults()` in `src/hooks.php`), so a priority of 10 or later runs after them and wins. Only templates that call `pedalcms_parse_template_args()` honor this filter.
 
-## Try it yourself
+### Example
 
-Riverbend wants the *Welding Technology* program page to show the line "Hands-on from week one" right after the page header, and no other program page to show it. Without copying any template, add the text with a hook.
+Riverbend wants the *Welding Technology* program page to show the line "Hands-on from week one" right after the page header, and no other program page to show it. 
 
-??? success "Check your work"
-    Use the `after_template` action for the page header. The text is output after the header's closing tag.
+Without copying any template, add the text with a hook. Use the `after_template` action for the page header. The text is output after the header's closing tag.
 
-    ```php
-    add_action(
-        'pedalcms/after_template/single-program/page-header',
-        function () {
-            if ( 'welding-technology' === get_post_field( 'post_name', get_the_ID() ) ) {
-                echo '<p>Hands-on from week one</p>';
-            }
-        }
-    );
-    ```
+```php
+add_action(
+	'pedalcms/after_template/single-program/page-header',
+	function () {
+		if ( 'welding-technology' === get_post_field( 'post_name', get_the_ID() ) ) {
+			echo '<p>Hands-on from week one</p>';
+		}
+	}
+);
+```
 
-    The hook name ends with `single-program/page-header` because that is the name `single-program.php` passes to `pedalcms_get_template_part()`.
+The hook name ends with `single-program/page-header` because that is the name `single-program.php` passes to `pedalcms_get_template_part()`.
 
-## Recap
-
-- Classic themes use `template_include`; block themes use registered block templates that render through the `pedalcms/template-render` block. Both honor overrides in `your-theme/pedalcms/`.
-- Override the smallest file that does the job, keeping its folder and name.
-- Use `pedalcms/before_template/{$template}` and `pedalcms/after_template/{$template}` to add markup without copying a file.
-- Use `pedalcms/template_defaults` to change defaults, and `pedalcms/template_args` to change the data a template receives.
 
 **Next:** [Configuration](configuration.md)
