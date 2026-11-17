@@ -963,7 +963,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\PedalCMS\\Core\\Plugin\u003A\u003A\u0024name",
             "name": "name",
-            "summary": "Slug\u0020style\u0020name\u0020of\u0020the\u0020plugin.\u0020Should\u0020match\u0020folder\u0020name.",
+            "summary": "Identifier\u0020for\u0020the\u0020plugin\u0027s\u0020block\u0020templates\u0020\u0028pedalcms\/\/\u003Cslug\u003E\u0029\u0020and\ntemplate\u0020overrides.\u0020Not\u0020the\u0020install\u0020folder\u003B\u0020do\u0020not\u0020change.",
             "url": "classes/PedalCMS-Core-Plugin.html#property_name"
         },                {
             "fqsen": "\\PedalCMS\\Core\\Plugin\u003A\u003A\u0024path",
